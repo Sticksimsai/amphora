@@ -44,8 +44,73 @@
     const layers = [...document.querySelectorAll('[data-par]')];
     addEventListener('scroll', () => requestAnimationFrame(() => {
       const y = scrollY; if (y > innerHeight * 1.4) return;
-      layers.forEach((el) => { el.style.transform = `translate3d(0, ${(y * el.dataset.par).toFixed(1)}px, 0)`; });
+      layers.forEach((el) => { el.style.translate = `0 ${(y * el.dataset.par).toFixed(1)}px`; });
     }), { passive: true });
+  }
+
+  // ── motion ────────────────────────────────────────────────────────────
+  const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Scroll reveals: anything marked .rise comes in once, staggered within its section.
+  const io = new IntersectionObserver((es) => es.forEach((e) => {
+    if (!e.isIntersecting) return;
+    e.target.classList.add('in'); io.unobserve(e.target);
+    e.target.querySelectorAll('.count').forEach(countUp);
+    if (e.target.classList.contains('count')) countUp(e.target);
+  }), { threshold: 0.18 });
+  document.querySelectorAll('.rise').forEach((el) => {
+    const sibs = [...el.parentElement.children].filter((x) => x.classList.contains('rise'));
+    el.style.setProperty('--d', (sibs.indexOf(el) * 0.09) + 's');
+    io.observe(el);
+  });
+
+  function countUp(el) {
+    if (still || el.dataset.done) return; el.dataset.done = 1;
+    const to = parseFloat(el.textContent), dp = (el.textContent.split('.')[1] || '').length, t0 = performance.now();
+    const step = (t) => { const k = Math.min(1, (t - t0) / 1100), e = 1 - Math.pow(1 - k, 3);
+      el.textContent = (to * e).toFixed(dp); if (k < 1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  }
+
+  // Cards: tilt toward the pointer, with a sheen that follows it. On touch
+  // devices they answer to the device's own tilt instead.
+  document.querySelectorAll('[data-tilt]').forEach((card) => {
+    const img = card.querySelector('img');
+    card.style.setProperty('--mask', `url(${img.getAttribute('src')})`);
+    if (still) return;
+    const set = (px, py) => {
+      card.style.setProperty('--ry', ((px - 0.5) * 22).toFixed(2) + 'deg');
+      card.style.setProperty('--rx', ((0.5 - py) * 16).toFixed(2) + 'deg');
+      card.style.setProperty('--mx', (px * 100).toFixed(1) + '%');
+      card.style.setProperty('--my', (py * 100).toFixed(1) + '%');
+      card.style.setProperty('--so', 1);
+    };
+    card.addEventListener('pointermove', (e) => {
+      const r = card.getBoundingClientRect(); card.classList.add('live');
+      set((e.clientX - r.left) / r.width, (e.clientY - r.top) / r.height);
+    });
+    card.addEventListener('pointerleave', () => {
+      card.classList.remove('live');
+      ['--rx', '--ry'].forEach((k) => card.style.setProperty(k, '0deg')); card.style.setProperty('--so', 0);
+    });
+  });
+  // The hero card also leans gently toward the pointer anywhere over the hero.
+  const hero = document.querySelector('.hero'), heroCard = document.querySelector('.hero-card .card');
+  if (!still && hero && heroCard) hero.addEventListener('pointermove', (e) => {
+    if (heroCard.classList.contains('live')) return;
+    const r = hero.getBoundingClientRect();
+    heroCard.style.setProperty('--ry', (((e.clientX - r.left) / r.width - 0.5) * 12).toFixed(2) + 'deg');
+    heroCard.style.setProperty('--rx', ((0.5 - (e.clientY - r.top) / r.height) * 8).toFixed(2) + 'deg');
+  });
+
+  // Hero film: a short loop over its own first frame. The clip begins and ends
+  // on the still, so it is faded in once it can play and simply loops.
+  const vid = $('hero-video'), stillImg = $('hero-still');
+  if (C.heroImage) { stillImg.onerror = () => { stillImg.onerror = null; stillImg.src = 'img/fresco.jpg'; }; stillImg.src = C.heroImage; }
+  if (C.heroVideo && !still) {
+    vid.loop = true; vid.src = C.heroVideo;
+    vid.addEventListener('canplay', () => { vid.play().then(() => vid.classList.add('on')).catch(() => {}); }, { once: true });
+    new IntersectionObserver(([e]) => { e.isIntersecting ? vid.play().catch(() => {}) : vid.pause(); }).observe(vid);
   }
 
   // ── wallet ────────────────────────────────────────────────────────────

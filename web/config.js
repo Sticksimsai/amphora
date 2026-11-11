@@ -9,6 +9,14 @@ window.AMPHORA = {
   explorer: 'https://elysium.kinetiq.xyz/explorer',
   bridge: 'https://elysium.kinetiq.xyz/bridge',
 
+  // Hero: a still and a short looping film of the same picture, shown in the arch.
+  // Leave blank to use the bundled fresco. Prefer files committed under img/.
+  // These two currently point at Higgsfield's file host. That is a stopgap:
+  // download both, commit them under img/, and change these to 'img/hero.jpg'
+  // and 'img/hero.mp4' so the site does not depend on someone else's storage.
+  heroImage: 'https://d8j0ntlcm91z4.cloudfront.net/user_38mxUVWFOcVXT8mCZ9tfkU8JtiI/hf_20261111_180214_5fb88722-c468-4d7c-8a99-4944a89e2368.png',
+  heroVideo: 'https://d8j0ntlcm91z4.cloudfront.net/user_38mxUVWFOcVXT8mCZ9tfkU8JtiI/hf_20261111_180348_5bb31511-8218-4143-9223-4814c3d3a174.mp4',
+
   // Set after deployment (contracts/script/Deploy.s.sol prints it).
   GACHA: '',
   machineId: 1,

@@ -34,14 +34,18 @@
   <svg class="burst" viewBox="-50 -50 100 100" aria-hidden="true"></svg>
 
   <div class="stage">
-    <div class="arch"><img src="img/fresco.jpg" alt="Detail of a painted ceiling: figures among clouds" data-par="0.06"></div>
+    <div class="arch" data-par="0.04">
+      <img id="hero-still" src="img/fresco.jpg" alt="An antique wall painting: a winged horse above a robed figure pouring from an amphora">
+      <video id="hero-video" muted playsinline preload="auto" aria-hidden="true"></video>
+    </div>
     <svg class="spark" viewBox="-50 -50 100 100" aria-hidden="true"><path d="M0-49 7-7 49 0 7 7 0 49-7 7-49 0-7-7Z"/></svg>
-    <img class="frag" src="img/fragment.webp" alt="A fragment of fresco: an enthroned figure, in greyscale" data-par="-0.05">
-    <div class="orbit" aria-hidden="true"></div>
+    <div class="orbit back" aria-hidden="true"></div>
+    <div class="hero-card" data-par="-0.05"><div class="card float" data-tilt><img src="img/slab-olympian.webp" alt="An Olympian slab: a fresco fragment of Pegasus, grade Omega"><i class="sheen"></i></div></div>
+    <div class="orbit front" aria-hidden="true"></div>
   </div>
 
   <div class="headline">
-    <h1><span class="big">Draw</span><span class="rest">a <br>fragment</span></h1>
+    <h1><span class="big" aria-label="Draw"><b>D</b><b>r</b><b>a</b><b>w</b></span><span class="rest">a <br>fragment</span></h1>
     <div class="rule"></div>
     <div class="under">
       <p class="copy">One box. One numbered fragment of a real work, graded and sealed. The odds are written on-chain before anyone opens anything, and the Ferryman will buy back whatever you draw at eighty percent of its mark.</p>
@@ -56,53 +60,53 @@
 </section>
 
 <section id="ladder" class="block">
-  <p class="eyebrow">N° 01 — The ladder</p>
-  <h2>Every box, <em>one fragment</em></h2>
+  <p class="eyebrow rise">N° 01 — The ladder</p>
+  <h2 class="rise">Every box, <em>one fragment</em></h2>
   <div class="split">
-    <table class="ladder">
+    <table class="ladder rise">
       <thead><tr><th>Class</th><th>Edition</th><th>Mark</th><th>Ferryman pays</th><th>Chance</th></tr></thead>
       <tbody id="rows"></tbody>
     </table>
-    <p class="copy narrow">Odds are published on-chain before any box opens. Expected value <b id="ev">0.37</b> HYPE, <b id="evp">74</b> percent of the box. The difference pays for the studio, the treasury, the physical cards and the Ferryman's float. Buy a box because you want the object.</p>
+    <p class="copy narrow rise">Odds are published on-chain before any box opens. Expected value <b id="ev">0.37</b> HYPE, <b id="evp">74</b> percent of the box. The difference pays for the studio, the treasury, the physical cards and the Ferryman's float. Buy a box because you want the object.</p>
   </div>
   <div class="slabs">
-    <figure><img src="img/slab-mortal.webp" alt="A Mortal slab, grade VII" loading="lazy"><figcaption>Mortal · of 300</figcaption></figure>
-    <figure><img src="img/slab-hero.webp" alt="A Hero slab, grade X" loading="lazy"><figcaption>Hero · of 25</figcaption></figure>
-    <figure><img src="img/slab-olympian.webp" alt="An Olympian slab, grade Omega" loading="lazy"><figcaption class="hot">Olympian · of 5</figcaption></figure>
+    <figure class="rise"><div class="card float" data-tilt><img src="img/slab-mortal.webp" alt="A Mortal slab, grade VII" loading="lazy"><i class="sheen"></i></div><figcaption>Mortal · of 300</figcaption></figure>
+    <figure class="rise"><div class="card float" data-tilt><img src="img/slab-hero.webp" alt="A Hero slab, grade X" loading="lazy"><i class="sheen"></i></div><figcaption>Hero · of 25</figcaption></figure>
+    <figure class="rise"><div class="card float" data-tilt><img src="img/slab-olympian.webp" alt="An Olympian slab, grade Omega" loading="lazy"><i class="sheen"></i></div><figcaption class="hot">Olympian · of 5</figcaption></figure>
   </div>
 </section>
 
 <section id="ferryman" class="block">
-  <p class="eyebrow">N° 02 — The Ferryman</p>
-  <h2>A floor, <em>not a promise</em></h2>
-  <div class="trio">
-    <div><p class="label">You hold</p><p class="fig" id="f-mark">0.35</p><p class="label dim">HYPE · stated mark</p></div>
-    <div><p class="label hot">The Ferryman pays</p><p class="fig hot" id="f-desk">0.28</p><p class="label dim">HYPE · 80% of mark</p></div>
+  <p class="eyebrow rise">N° 02 — The Ferryman</p>
+  <h2 class="rise">A floor, <em>not a promise</em></h2>
+  <div class="trio rise">
+    <div><p class="label">You hold</p><p class="fig count" id="f-mark">0.35</p><p class="label dim">HYPE · stated mark</p></div>
+    <div><p class="label hot">The Ferryman pays</p><p class="fig hot count" id="f-desk">0.28</p><p class="label dim">HYPE · 80% of mark</p></div>
     <div><p class="label">You wait</p><p class="fig">0</p><p class="label dim">Seconds · no buyer needed</p></div>
   </div>
-  <p class="copy narrow">No listing. No counterparty. No waiting for someone to want it. Sell from your collection in one transaction, paid on-chain in HYPE. The float is a public wallet: you can see what it can pay before you ask it to.</p>
+  <p class="copy narrow rise">No listing. No counterparty. No waiting for someone to want it. Sell from your collection in one transaction, paid on-chain in HYPE. The float is a public wallet: you can see what it can pay before you ask it to.</p>
 </section>
 
 <section id="fairness" class="block">
-  <p class="eyebrow">N° 03 — Fairness</p>
-  <h2>Neither side <em>holds the dice</em></h2>
-  <ol class="steps">
+  <p class="eyebrow rise">N° 03 — Fairness</p>
+  <h2 class="rise">Neither side <em>holds the dice</em></h2>
+  <ol class="steps rise">
     <li><b>Before any customer exists</b> a secret is hashed a hundred thousand times and the last link is published on-chain.</li>
     <li><b>When you open a box</b> your browser adds a seed of its own. We cannot know it in advance, and we cannot change what we already published.</li>
     <li><b>When the draw settles</b> the next link is revealed. The contract accepts only the true one.</li>
     <li><b>The result</b> comes from both seeds, your address and the draw number. Every revealed seed is public, so anyone can recompute any draw.</li>
   </ol>
-  <p class="copy narrow">If a draw is ever not settled within ten minutes, you take your HYPE back from the contract yourself. That path does not need us to be awake, willing or alive.</p>
+  <p class="copy narrow rise">If a draw is ever not settled within ten minutes, you take your HYPE back from the contract yourself. That path does not need us to be awake, willing or alive.</p>
 </section>
 
 <section id="certificate" class="block">
-  <p class="eyebrow">N° 04 — The object</p>
-  <h2>Hold it, <em>and it answers</em></h2>
-  <div class="objects">
+  <p class="eyebrow rise">N° 04 — The object</p>
+  <h2 class="rise">Hold it, <em>and it answers</em></h2>
+  <div class="objects rise">
     <img src="img/certificate.jpg" alt="An Amphora certificate of authenticity: the work's slab over an antique mural, with its edition number and serial" loading="lazy">
     <div>
-      <p class="copy narrow">Any Sherd can be redeemed as a sealed card with a chip inside and a signed certificate. Redeeming binds the certificate to the card for good: one number, one object.</p>
-      <p class="copy narrow">Tap the chip and it tells you which work, which number, and who holds it.</p>
+      <p class="copy narrow rise">Any Sherd can be redeemed as a sealed card with a chip inside and a signed certificate. Redeeming binds the certificate to the card for good: one number, one object.</p>
+      <p class="copy narrow rise">Tap the chip and it tells you which work, which number, and who holds it.</p>
       <img class="back" src="img/card-back.jpg" alt="The back of an Amphora card: a radiate sun in a Greek key frame" loading="lazy">
     </div>
   </div>
