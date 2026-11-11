@@ -1,0 +1,12 @@
+# Amphora monitors. Install with: crontab deploy/crontab.amphora  (as user amphora)
+# Everything that silently drained or stalled in production is a line here.
+SHELL=/bin/bash
+HOME=/home/amphora
+B=/home/amphora/amphora/backend
+
+*/2  * * * *  cd $B && npx tsx scripts/watchdog.ts     >> $HOME/logs/watchdog.log 2>&1
+*/5  * * * *  cd $B && npx tsx scripts/float-check.ts  >> $HOME/logs/float.log    2>&1
+7    0 * * *  cd $B && npx tsx scripts/daily-buyback.ts >> $HOME/logs/buyback.log 2>&1
+# NAV marks expire after 90 days and a stale NAV bars a work from draws.
+# Roll them monthly at the current box price (edit the price if you reprice).
+17   3 1 * *  cd $B && npx tsx scripts/reprice.ts 0.5   >> $HOME/logs/nav.log      2>&1

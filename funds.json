@@ -1,0 +1,56 @@
+{
+  "reserveWallet": "0x0000000000000000000000000000000000000000",
+  "policyNote": "The Reserve is funded from the creator's share of $AMPH pool fees, forwarded by hand and visible on-chain. It holds HYPE. Fund targets are in US dollars because auction houses invoice in fiat, so a bar can move when HYPE's price moves even though nothing has been spent. The allocation is studio policy, published for scrutiny, not an obligation to any holder.",
+  "funds": [
+    {
+      "id": "I",
+      "name": "Fund I",
+      "targetUsd": 2000,
+      "status": "FILLING",
+      "profile": "A modest edition — Chagall, Miró, Dalí",
+      "lot": null
+    },
+    {
+      "id": "II",
+      "name": "Fund II",
+      "targetUsd": 6000,
+      "status": "QUEUED",
+      "profile": "A recognisable name — Picasso ceramics, Haring Pop Shop",
+      "lot": null
+    },
+    {
+      "id": "III",
+      "name": "Fund III",
+      "targetUsd": 15000,
+      "status": "QUEUED",
+      "profile": "A chase piece — Warhol plates, Kusama, Riley",
+      "lot": null
+    },
+    {
+      "id": "IV",
+      "name": "Fund IV",
+      "targetUsd": 40000,
+      "status": "QUEUED",
+      "profile": "The headline — Warhol, Banksy, Hockney",
+      "lot": null
+    }
+  ],
+  "ledger": [],
+  "_lotSchema": {
+    "artist": "Marc Chagall",
+    "title": "Le Bouquet de l'artiste",
+    "year": "1960",
+    "medium": "Colour lithograph",
+    "edition": "Edition of 200",
+    "image": "https://api.amphora.example/static/lot-fund1.webp",
+    "house": "Sotheby's London",
+    "saleName": "Prints & Multiples",
+    "saleStart": "2026-09-16",
+    "saleEnd": "2026-09-23T17:00:00Z",
+    "guideLow": 1200,
+    "guideHigh": 1800,
+    "currency": "GBP",
+    "allInEstimateUsd": 2900,
+    "lotUrl": "https://www.sothebys.com/..."
+  }
+}

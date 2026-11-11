@@ -1,0 +1,12 @@
+[Unit]
+Description=Amphora settler
+After=network.target docker.service
+[Service]
+User=amphora
+WorkingDirectory=/home/amphora/amphora/backend
+EnvironmentFile=/home/amphora/amphora/backend/.env
+ExecStart=/usr/bin/node --import tsx src/workers/settler.ts
+Restart=always
+RestartSec=3
+[Install]
+WantedBy=multi-user.target

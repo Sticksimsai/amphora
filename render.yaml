@@ -1,0 +1,15 @@
+# Render blueprint: the static site only. The API, settler and Postgres are
+# deployed separately once contracts exist (see MAINNET-RUNBOOK.md).
+services:
+  - type: web
+    name: amphora
+    runtime: static
+    buildCommand: "true"
+    staticPublishPath: ./web
+    headers:
+      - path: /fonts/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
+      - path: /*
+        name: X-Frame-Options
+        value: DENY

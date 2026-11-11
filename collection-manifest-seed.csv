@@ -1,0 +1,521 @@
+id,title,zone,scene,light,edge,variant
+GC-001,Fragment 001 — Fortune,Fortune,1,4,3,
+GC-002,Fragment 002 — Fortune,Fortune,2,4,1,
+GC-003,Fragment 003 — Fortune,Fortune,3,3,5,urban
+GC-004,Fragment 004 — Fortune,Fortune,4,1,4,
+GC-005,Fragment 005 — Fortune,Fortune,5,5,4,urban
+GC-006,Fragment 006 — Fortune,Fortune,6,3,3,
+GC-007,Fragment 007 — Fortune,Fortune,7,2,5,
+GC-008,Fragment 008 — Fortune,Fortune,8,1,4,
+GC-009,Fragment 009 — Fortune,Fortune,9,2,2,
+GC-010,Fragment 010 — Fortune,Fortune,10,2,2,
+GC-011,Fragment 011 — Fortune,Fortune,1,1,1,
+GC-012,Fragment 012 — Fortune,Fortune,2,4,2,urban
+GC-013,Fragment 013 — Fortune,Fortune,3,5,5,urban
+GC-014,Fragment 014 — Fortune,Fortune,4,5,1,
+GC-015,Fragment 015 — Fortune,Fortune,5,5,1,
+GC-016,Fragment 016 — Fortune,Fortune,6,1,4,
+GC-017,Fragment 017 — Fortune,Fortune,7,3,2,
+GC-018,Fragment 018 — Fortune,Fortune,8,5,4,
+GC-019,Fragment 019 — Fortune,Fortune,9,2,1,
+GC-020,Fragment 020 — Fortune,Fortune,10,1,1,
+GC-021,Fragment 021 — Fortune,Fortune,1,5,1,
+GC-022,Fragment 022 — Fortune,Fortune,2,4,4,
+GC-023,Fragment 023 — Fortune,Fortune,3,3,3,
+GC-024,Fragment 024 — Fortune,Fortune,4,2,1,urban
+GC-025,Fragment 025 — Fortune,Fortune,5,4,2,
+GC-026,Fragment 026 — Fortune,Fortune,6,1,1,
+GC-027,Fragment 027 — Fortune,Fortune,7,3,1,
+GC-028,Fragment 028 — Fortune,Fortune,8,2,1,
+GC-029,Fragment 029 — Fortune,Fortune,10,5,1,
+GC-030,Fragment 030 — Fortune,Fortune,1,3,3,
+GC-031,Fragment 031 — Fortune,Fortune,2,1,2,
+GC-032,Fragment 032 — Fortune,Fortune,3,5,4,urban
+GC-033,Fragment 033 — Fortune,Fortune,4,3,5,urban
+GC-034,Fragment 034 — Fortune,Fortune,5,5,5,
+GC-035,Fragment 035 — Fortune,Fortune,7,1,2,urban
+GC-036,Fragment 036 — Fortune,Fortune,8,2,4,
+GC-037,Fragment 037 — Fortune,Fortune,10,3,2,urban
+GC-038,Fragment 038 — Fortune,Fortune,1,1,2,urban
+GC-039,Fragment 039 — Fortune,Fortune,2,5,3,
+GC-040,Fragment 040 — Fortune,Fortune,3,4,3,
+GC-041,Fragment 041 — Fortune,Fortune,4,3,3,
+GC-042,Fragment 042 — Fortune,Fortune,5,1,1,
+GC-043,Fragment 043 — Fortune,Fortune,7,2,3,
+GC-044,Fragment 044 — Fortune,Fortune,8,4,1,
+GC-045,Fragment 045 — Fortune,Fortune,10,5,3,urban
+GC-046,Fragment 046 — Fortune,Fortune,1,3,2,
+GC-047,Fragment 047 — Fortune,Fortune,7,3,3,urban
+GC-048,Fragment 048 — Fortune,Fortune,8,4,2,
+GC-049,Fragment 049 — Fortune,Fortune,8,4,4,
+GC-050,Fragment 050 — Fortune,Fortune,8,5,3,
+GC-051,Fragment 051 — The Heavens,The Heavens,1,1,2,
+GC-052,Fragment 052 — The Heavens,The Heavens,2,2,4,
+GC-053,Fragment 053 — The Heavens,The Heavens,3,1,1,
+GC-054,Fragment 054 — The Heavens,The Heavens,4,5,2,
+GC-055,Fragment 055 — The Heavens,The Heavens,5,3,4,urban
+GC-056,Fragment 056 — The Heavens,The Heavens,6,1,1,
+GC-057,Fragment 057 — The Heavens,The Heavens,7,4,5,urban
+GC-058,Fragment 058 — The Heavens,The Heavens,8,3,1,
+GC-059,Fragment 059 — The Heavens,The Heavens,9,4,2,urban
+GC-060,Fragment 060 — The Heavens,The Heavens,10,2,2,urban
+GC-061,Fragment 061 — The Heavens,The Heavens,1,1,3,
+GC-062,Fragment 062 — The Heavens,The Heavens,2,4,3,
+GC-063,Fragment 063 — The Heavens,The Heavens,3,1,5,
+GC-064,Fragment 064 — The Heavens,The Heavens,4,4,4,
+GC-065,Fragment 065 — The Heavens,The Heavens,5,3,5,urban
+GC-066,Fragment 066 — The Heavens,The Heavens,6,1,3,
+GC-067,Fragment 067 — The Heavens,The Heavens,7,5,4,
+GC-068,Fragment 068 — The Heavens,The Heavens,8,3,4,
+GC-069,Fragment 069 — The Heavens,The Heavens,9,2,1,
+GC-070,Fragment 070 — The Heavens,The Heavens,1,2,3,
+GC-071,Fragment 071 — The Heavens,The Heavens,2,1,3,
+GC-072,Fragment 072 — The Heavens,The Heavens,3,2,4,
+GC-073,Fragment 073 — The Heavens,The Heavens,4,3,2,
+GC-074,Fragment 074 — The Heavens,The Heavens,5,5,5,
+GC-075,Fragment 075 — The Heavens,The Heavens,6,4,5,
+GC-076,Fragment 076 — The Heavens,The Heavens,7,3,5,urban
+GC-077,Fragment 077 — The Heavens,The Heavens,8,1,2,
+GC-078,Fragment 078 — The Heavens,The Heavens,9,5,5,urban
+GC-079,Fragment 079 — The Heavens,The Heavens,1,5,5,
+GC-080,Fragment 080 — The Heavens,The Heavens,2,5,4,urban
+GC-081,Fragment 081 — The Heavens,The Heavens,3,1,4,
+GC-082,Fragment 082 — The Heavens,The Heavens,4,5,4,
+GC-083,Fragment 083 — The Heavens,The Heavens,5,2,1,urban
+GC-084,Fragment 084 — The Heavens,The Heavens,6,4,2,
+GC-085,Fragment 085 — The Heavens,The Heavens,8,5,1,
+GC-086,Fragment 086 — The Heavens,The Heavens,9,1,1,
+GC-087,Fragment 087 — The Heavens,The Heavens,2,3,2,
+GC-088,Fragment 088 — The Heavens,The Heavens,3,1,3,
+GC-089,Fragment 089 — The Heavens,The Heavens,4,1,3,urban
+GC-090,Fragment 090 — The Heavens,The Heavens,6,1,4,urban
+GC-091,Fragment 091 — The Heavens,The Heavens,8,4,5,
+GC-092,Fragment 092 — The Heavens,The Heavens,2,5,2,
+GC-093,Fragment 093 — The Heavens,The Heavens,3,2,3,
+GC-094,Fragment 094 — The Heavens,The Heavens,6,4,3,
+GC-095,Fragment 095 — The Heavens,The Heavens,8,2,3,urban
+GC-096,Fragment 096 — The Heavens,The Heavens,2,1,5,
+GC-097,Fragment 097 — The Heavens,The Heavens,3,2,1,
+GC-098,Fragment 098 — The Heavens,The Heavens,6,3,4,
+GC-099,Fragment 099 — The Heavens,The Heavens,8,5,4,
+GC-100,Fragment 100 — The Heavens,The Heavens,3,3,2,
+GC-101,Fragment 101 — The Trades,The Trades,1,4,1,urban
+GC-102,Fragment 102 — The Trades,The Trades,2,5,2,
+GC-103,Fragment 103 — The Trades,The Trades,3,1,5,urban
+GC-104,Fragment 104 — The Trades,The Trades,4,4,3,
+GC-105,Fragment 105 — The Trades,The Trades,5,2,5,
+GC-106,Fragment 106 — The Trades,The Trades,6,4,4,
+GC-107,Fragment 107 — The Trades,The Trades,7,3,3,
+GC-108,Fragment 108 — The Trades,The Trades,8,1,3,urban
+GC-109,Fragment 109 — The Trades,The Trades,9,1,3,
+GC-110,Fragment 110 — The Trades,The Trades,10,2,5,
+GC-111,Fragment 111 — The Trades,The Trades,1,5,5,
+GC-112,Fragment 112 — The Trades,The Trades,2,4,2,
+GC-113,Fragment 113 — The Trades,The Trades,3,4,4,
+GC-114,Fragment 114 — The Trades,The Trades,4,4,1,
+GC-115,Fragment 115 — The Trades,The Trades,5,2,1,
+GC-116,Fragment 116 — The Trades,The Trades,6,5,1,
+GC-117,Fragment 117 — The Trades,The Trades,7,4,3,
+GC-118,Fragment 118 — The Trades,The Trades,8,2,1,
+GC-119,Fragment 119 — The Trades,The Trades,9,5,4,
+GC-120,Fragment 120 — The Trades,The Trades,10,5,5,
+GC-121,Fragment 121 — The Trades,The Trades,1,2,5,
+GC-122,Fragment 122 — The Trades,The Trades,2,3,5,
+GC-123,Fragment 123 — The Trades,The Trades,3,3,4,
+GC-124,Fragment 124 — The Trades,The Trades,4,2,1,urban
+GC-125,Fragment 125 — The Trades,The Trades,5,1,4,
+GC-126,Fragment 126 — The Trades,The Trades,6,1,4,
+GC-127,Fragment 127 — The Trades,The Trades,8,1,2,urban
+GC-128,Fragment 128 — The Trades,The Trades,9,2,1,
+GC-129,Fragment 129 — The Trades,The Trades,10,4,1,urban
+GC-130,Fragment 130 — The Trades,The Trades,1,2,3,
+GC-131,Fragment 131 — The Trades,The Trades,3,5,3,
+GC-132,Fragment 132 — The Trades,The Trades,5,5,3,
+GC-133,Fragment 133 — The Trades,The Trades,6,3,1,
+GC-134,Fragment 134 — The Trades,The Trades,8,2,4,urban
+GC-135,Fragment 135 — The Trades,The Trades,9,3,1,
+GC-136,Fragment 136 — The Trades,The Trades,1,3,2,urban
+GC-137,Fragment 137 — The Trades,The Trades,3,3,3,
+GC-138,Fragment 138 — The Trades,The Trades,5,1,1,
+GC-139,Fragment 139 — The Trades,The Trades,6,4,2,urban
+GC-140,Fragment 140 — The Trades,The Trades,8,1,4,
+GC-141,Fragment 141 — The Trades,The Trades,9,2,5,urban
+GC-142,Fragment 142 — The Trades,The Trades,1,3,1,
+GC-143,Fragment 143 — The Trades,The Trades,3,5,4,
+GC-144,Fragment 144 — The Trades,The Trades,5,3,2,
+GC-145,Fragment 145 — The Trades,The Trades,6,1,3,
+GC-146,Fragment 146 — The Trades,The Trades,8,3,2,
+GC-147,Fragment 147 — The Trades,The Trades,1,5,1,urban
+GC-148,Fragment 148 — The Trades,The Trades,5,5,2,
+GC-149,Fragment 149 — The Trades,The Trades,1,4,2,
+GC-150,Fragment 150 — The Trades,The Trades,5,3,3,urban
+GC-151,Fragment 151 — The Virtues,The Virtues,1,2,4,urban
+GC-152,Fragment 152 — The Virtues,The Virtues,2,4,1,urban
+GC-153,Fragment 153 — The Virtues,The Virtues,3,5,4,
+GC-154,Fragment 154 — The Virtues,The Virtues,4,1,5,urban
+GC-155,Fragment 155 — The Virtues,The Virtues,5,3,2,urban
+GC-156,Fragment 156 — The Virtues,The Virtues,6,5,2,urban
+GC-157,Fragment 157 — The Virtues,The Virtues,7,1,3,
+GC-158,Fragment 158 — The Virtues,The Virtues,8,2,4,
+GC-159,Fragment 159 — The Virtues,The Virtues,9,4,5,
+GC-160,Fragment 160 — The Virtues,The Virtues,10,4,2,
+GC-161,Fragment 161 — The Virtues,The Virtues,1,3,2,
+GC-162,Fragment 162 — The Virtues,The Virtues,2,4,4,
+GC-163,Fragment 163 — The Virtues,The Virtues,3,4,2,
+GC-164,Fragment 164 — The Virtues,The Virtues,4,1,4,
+GC-165,Fragment 165 — The Virtues,The Virtues,5,1,4,
+GC-166,Fragment 166 — The Virtues,The Virtues,6,4,2,
+GC-167,Fragment 167 — The Virtues,The Virtues,7,1,5,urban
+GC-168,Fragment 168 — The Virtues,The Virtues,8,4,1,
+GC-169,Fragment 169 — The Virtues,The Virtues,9,2,5,
+GC-170,Fragment 170 — The Virtues,The Virtues,10,5,4,
+GC-171,Fragment 171 — The Virtues,The Virtues,2,2,5,
+GC-172,Fragment 172 — The Virtues,The Virtues,3,4,4,
+GC-173,Fragment 173 — The Virtues,The Virtues,4,4,3,
+GC-174,Fragment 174 — The Virtues,The Virtues,6,4,3,
+GC-175,Fragment 175 — The Virtues,The Virtues,7,2,3,
+GC-176,Fragment 176 — The Virtues,The Virtues,8,3,1,
+GC-177,Fragment 177 — The Virtues,The Virtues,9,3,2,
+GC-178,Fragment 178 — The Virtues,The Virtues,10,3,5,
+GC-179,Fragment 179 — The Virtues,The Virtues,2,2,2,
+GC-180,Fragment 180 — The Virtues,The Virtues,3,4,1,urban
+GC-181,Fragment 181 — The Virtues,The Virtues,4,5,5,
+GC-182,Fragment 182 — The Virtues,The Virtues,6,3,4,
+GC-183,Fragment 183 — The Virtues,The Virtues,7,1,2,
+GC-184,Fragment 184 — The Virtues,The Virtues,8,5,2,
+GC-185,Fragment 185 — The Virtues,The Virtues,9,1,2,urban
+GC-186,Fragment 186 — The Virtues,The Virtues,10,5,5,
+GC-187,Fragment 187 — The Virtues,The Virtues,2,2,1,
+GC-188,Fragment 188 — The Virtues,The Virtues,3,5,3,
+GC-189,Fragment 189 — The Virtues,The Virtues,4,2,5,
+GC-190,Fragment 190 — The Virtues,The Virtues,7,2,1,
+GC-191,Fragment 191 — The Virtues,The Virtues,8,3,3,urban
+GC-192,Fragment 192 — The Virtues,The Virtues,9,3,1,
+GC-193,Fragment 193 — The Virtues,The Virtues,10,1,2,urban
+GC-194,Fragment 194 — The Virtues,The Virtues,4,3,3,
+GC-195,Fragment 195 — The Virtues,The Virtues,7,5,2,urban
+GC-196,Fragment 196 — The Virtues,The Virtues,8,4,5,urban
+GC-197,Fragment 197 — The Virtues,The Virtues,7,4,2,
+GC-198,Fragment 198 — The Virtues,The Virtues,8,1,1,
+GC-199,Fragment 199 — The Virtues,The Virtues,7,5,1,
+GC-200,Fragment 200 — The Virtues,The Virtues,8,5,4,
+GC-201,Fragment 201 — The Vices,The Vices,1,4,4,
+GC-202,Fragment 202 — The Vices,The Vices,2,3,1,
+GC-203,Fragment 203 — The Vices,The Vices,3,4,5,
+GC-204,Fragment 204 — The Vices,The Vices,4,3,5,urban
+GC-205,Fragment 205 — The Vices,The Vices,5,5,3,urban
+GC-206,Fragment 206 — The Vices,The Vices,6,5,1,
+GC-207,Fragment 207 — The Vices,The Vices,7,2,1,urban
+GC-208,Fragment 208 — The Vices,The Vices,8,3,4,
+GC-209,Fragment 209 — The Vices,The Vices,9,1,5,
+GC-210,Fragment 210 — The Vices,The Vices,10,3,2,urban
+GC-211,Fragment 211 — The Vices,The Vices,1,2,3,urban
+GC-212,Fragment 212 — The Vices,The Vices,2,2,2,
+GC-213,Fragment 213 — The Vices,The Vices,3,3,2,
+GC-214,Fragment 214 — The Vices,The Vices,4,4,5,
+GC-215,Fragment 215 — The Vices,The Vices,5,1,5,urban
+GC-216,Fragment 216 — The Vices,The Vices,6,2,3,
+GC-217,Fragment 217 — The Vices,The Vices,7,4,2,
+GC-218,Fragment 218 — The Vices,The Vices,8,4,1,
+GC-219,Fragment 219 — The Vices,The Vices,9,2,1,
+GC-220,Fragment 220 — The Vices,The Vices,10,2,5,
+GC-221,Fragment 221 — The Vices,The Vices,1,5,4,
+GC-222,Fragment 222 — The Vices,The Vices,2,4,1,
+GC-223,Fragment 223 — The Vices,The Vices,3,3,1,
+GC-224,Fragment 224 — The Vices,The Vices,4,5,4,
+GC-225,Fragment 225 — The Vices,The Vices,5,4,4,
+GC-226,Fragment 226 — The Vices,The Vices,6,2,2,
+GC-227,Fragment 227 — The Vices,The Vices,7,1,5,
+GC-228,Fragment 228 — The Vices,The Vices,8,1,5,
+GC-229,Fragment 229 — The Vices,The Vices,9,5,5,urban
+GC-230,Fragment 230 — The Vices,The Vices,10,2,2,urban
+GC-231,Fragment 231 — The Vices,The Vices,1,1,1,
+GC-232,Fragment 232 — The Vices,The Vices,2,1,1,
+GC-233,Fragment 233 — The Vices,The Vices,3,1,2,urban
+GC-234,Fragment 234 — The Vices,The Vices,4,2,2,
+GC-235,Fragment 235 — The Vices,The Vices,5,2,4,urban
+GC-236,Fragment 236 — The Vices,The Vices,7,5,2,
+GC-237,Fragment 237 — The Vices,The Vices,9,1,4,
+GC-238,Fragment 238 — The Vices,The Vices,1,2,1,
+GC-239,Fragment 239 — The Vices,The Vices,2,4,5,urban
+GC-240,Fragment 240 — The Vices,The Vices,3,2,1,
+GC-241,Fragment 241 — The Vices,The Vices,5,1,3,urban
+GC-242,Fragment 242 — The Vices,The Vices,9,5,1,
+GC-243,Fragment 243 — The Vices,The Vices,1,3,3,
+GC-244,Fragment 244 — The Vices,The Vices,3,5,2,
+GC-245,Fragment 245 — The Vices,The Vices,5,5,5,
+GC-246,Fragment 246 — The Vices,The Vices,9,3,5,
+GC-247,Fragment 247 — The Vices,The Vices,1,1,2,
+GC-248,Fragment 248 — The Vices,The Vices,5,1,2,
+GC-249,Fragment 249 — The Vices,The Vices,1,1,3,
+GC-250,Fragment 250 — The Vices,The Vices,1,4,2,
+GC-251,Fragment 251 — The Seasons,The Seasons,1,4,1,
+GC-252,Fragment 252 — The Seasons,The Seasons,2,4,1,
+GC-253,Fragment 253 — The Seasons,The Seasons,3,5,2,
+GC-254,Fragment 254 — The Seasons,The Seasons,4,4,4,
+GC-255,Fragment 255 — The Seasons,The Seasons,5,3,1,
+GC-256,Fragment 256 — The Seasons,The Seasons,6,1,4,
+GC-257,Fragment 257 — The Seasons,The Seasons,7,5,5,
+GC-258,Fragment 258 — The Seasons,The Seasons,8,5,1,
+GC-259,Fragment 259 — The Seasons,The Seasons,9,5,2,urban
+GC-260,Fragment 260 — The Seasons,The Seasons,10,4,2,
+GC-261,Fragment 261 — The Seasons,The Seasons,1,2,5,
+GC-262,Fragment 262 — The Seasons,The Seasons,2,4,4,
+GC-263,Fragment 263 — The Seasons,The Seasons,3,1,1,
+GC-264,Fragment 264 — The Seasons,The Seasons,4,3,5,urban
+GC-265,Fragment 265 — The Seasons,The Seasons,5,5,3,
+GC-266,Fragment 266 — The Seasons,The Seasons,6,5,1,
+GC-267,Fragment 267 — The Seasons,The Seasons,7,1,2,
+GC-268,Fragment 268 — The Seasons,The Seasons,8,5,4,
+GC-269,Fragment 269 — The Seasons,The Seasons,9,3,3,urban
+GC-270,Fragment 270 — The Seasons,The Seasons,10,2,2,
+GC-271,Fragment 271 — The Seasons,The Seasons,1,5,1,
+GC-272,Fragment 272 — The Seasons,The Seasons,2,2,3,urban
+GC-273,Fragment 273 — The Seasons,The Seasons,3,4,2,
+GC-274,Fragment 274 — The Seasons,The Seasons,4,4,1,urban
+GC-275,Fragment 275 — The Seasons,The Seasons,5,2,4,
+GC-276,Fragment 276 — The Seasons,The Seasons,6,4,1,
+GC-277,Fragment 277 — The Seasons,The Seasons,7,2,2,urban
+GC-278,Fragment 278 — The Seasons,The Seasons,8,2,2,
+GC-279,Fragment 279 — The Seasons,The Seasons,9,4,5,
+GC-280,Fragment 280 — The Seasons,The Seasons,10,2,3,
+GC-281,Fragment 281 — The Seasons,The Seasons,1,1,4,
+GC-282,Fragment 282 — The Seasons,The Seasons,2,3,2,
+GC-283,Fragment 283 — The Seasons,The Seasons,3,4,5,
+GC-284,Fragment 284 — The Seasons,The Seasons,4,2,2,urban
+GC-285,Fragment 285 — The Seasons,The Seasons,5,5,2,
+GC-286,Fragment 286 — The Seasons,The Seasons,7,3,4,
+GC-287,Fragment 287 — The Seasons,The Seasons,8,4,5,
+GC-288,Fragment 288 — The Seasons,The Seasons,9,1,1,urban
+GC-289,Fragment 289 — The Seasons,The Seasons,10,1,1,
+GC-290,Fragment 290 — The Seasons,The Seasons,1,1,3,
+GC-291,Fragment 291 — The Seasons,The Seasons,3,5,1,
+GC-292,Fragment 292 — The Seasons,The Seasons,4,5,1,
+GC-293,Fragment 293 — The Seasons,The Seasons,7,1,5,urban
+GC-294,Fragment 294 — The Seasons,The Seasons,10,3,2,
+GC-295,Fragment 295 — The Seasons,The Seasons,3,2,1,
+GC-296,Fragment 296 — The Seasons,The Seasons,4,3,3,
+GC-297,Fragment 297 — The Seasons,The Seasons,7,4,5,urban
+GC-298,Fragment 298 — The Seasons,The Seasons,4,3,1,
+GC-299,Fragment 299 — The Seasons,The Seasons,7,5,3,urban
+GC-300,Fragment 300 — The Seasons,The Seasons,4,2,5,urban
+GC-301,Fragment 301 — The Elements,The Elements,1,4,1,urban
+GC-302,Fragment 302 — The Elements,The Elements,2,2,4,
+GC-303,Fragment 303 — The Elements,The Elements,3,5,5,
+GC-304,Fragment 304 — The Elements,The Elements,4,4,5,
+GC-305,Fragment 305 — The Elements,The Elements,5,3,4,
+GC-306,Fragment 306 — The Elements,The Elements,6,5,3,urban
+GC-307,Fragment 307 — The Elements,The Elements,7,3,1,
+GC-308,Fragment 308 — The Elements,The Elements,8,5,3,
+GC-309,Fragment 309 — The Elements,The Elements,9,2,3,
+GC-310,Fragment 310 — The Elements,The Elements,10,5,2,
+GC-311,Fragment 311 — The Elements,The Elements,1,2,1,
+GC-312,Fragment 312 — The Elements,The Elements,2,3,5,
+GC-313,Fragment 313 — The Elements,The Elements,4,5,3,
+GC-314,Fragment 314 — The Elements,The Elements,5,5,2,urban
+GC-315,Fragment 315 — The Elements,The Elements,6,2,1,
+GC-316,Fragment 316 — The Elements,The Elements,7,2,4,
+GC-317,Fragment 317 — The Elements,The Elements,8,1,4,
+GC-318,Fragment 318 — The Elements,The Elements,9,1,1,
+GC-319,Fragment 319 — The Elements,The Elements,10,3,4,
+GC-320,Fragment 320 — The Elements,The Elements,2,4,4,
+GC-321,Fragment 321 — The Elements,The Elements,4,2,4,
+GC-322,Fragment 322 — The Elements,The Elements,5,3,2,
+GC-323,Fragment 323 — The Elements,The Elements,6,5,1,
+GC-324,Fragment 324 — The Elements,The Elements,7,2,5,urban
+GC-325,Fragment 325 — The Elements,The Elements,8,4,1,
+GC-326,Fragment 326 — The Elements,The Elements,9,3,3,
+GC-327,Fragment 327 — The Elements,The Elements,10,1,3,urban
+GC-328,Fragment 328 — The Elements,The Elements,2,5,3,
+GC-329,Fragment 329 — The Elements,The Elements,4,1,5,urban
+GC-330,Fragment 330 — The Elements,The Elements,5,2,3,urban
+GC-331,Fragment 331 — The Elements,The Elements,6,3,4,
+GC-332,Fragment 332 — The Elements,The Elements,7,5,4,
+GC-333,Fragment 333 — The Elements,The Elements,8,5,1,
+GC-334,Fragment 334 — The Elements,The Elements,9,2,2,
+GC-335,Fragment 335 — The Elements,The Elements,10,4,5,
+GC-336,Fragment 336 — The Elements,The Elements,5,4,5,urban
+GC-337,Fragment 337 — The Elements,The Elements,6,2,2,urban
+GC-338,Fragment 338 — The Elements,The Elements,7,3,5,urban
+GC-339,Fragment 339 — The Elements,The Elements,8,3,1,urban
+GC-340,Fragment 340 — The Elements,The Elements,9,1,2,
+GC-341,Fragment 341 — The Elements,The Elements,10,2,5,
+GC-342,Fragment 342 — The Elements,The Elements,5,4,3,
+GC-343,Fragment 343 — The Elements,The Elements,6,3,1,
+GC-344,Fragment 344 — The Elements,The Elements,8,2,5,
+GC-345,Fragment 345 — The Elements,The Elements,10,3,3,
+GC-346,Fragment 346 — The Elements,The Elements,5,1,3,
+GC-347,Fragment 347 — The Elements,The Elements,8,1,2,
+GC-348,Fragment 348 — The Elements,The Elements,8,4,5,
+GC-349,Fragment 349 — The Elements,The Elements,8,1,3,urban
+GC-350,Fragment 350 — The Elements,The Elements,8,3,4,
+GC-351,Fragment 351 — The Muses,The Muses,1,4,5,
+GC-352,Fragment 352 — The Muses,The Muses,2,5,3,
+GC-353,Fragment 353 — The Muses,The Muses,3,2,4,
+GC-354,Fragment 354 — The Muses,The Muses,4,4,4,
+GC-355,Fragment 355 — The Muses,The Muses,5,5,4,
+GC-356,Fragment 356 — The Muses,The Muses,6,2,4,
+GC-357,Fragment 357 — The Muses,The Muses,7,5,4,
+GC-358,Fragment 358 — The Muses,The Muses,8,4,2,urban
+GC-359,Fragment 359 — The Muses,The Muses,9,2,5,
+GC-360,Fragment 360 — The Muses,The Muses,10,2,5,
+GC-361,Fragment 361 — The Muses,The Muses,1,1,3,
+GC-362,Fragment 362 — The Muses,The Muses,2,1,3,urban
+GC-363,Fragment 363 — The Muses,The Muses,3,3,1,
+GC-364,Fragment 364 — The Muses,The Muses,4,2,1,urban
+GC-365,Fragment 365 — The Muses,The Muses,5,1,2,urban
+GC-366,Fragment 366 — The Muses,The Muses,6,1,4,
+GC-367,Fragment 367 — The Muses,The Muses,7,2,1,
+GC-368,Fragment 368 — The Muses,The Muses,8,2,4,
+GC-369,Fragment 369 — The Muses,The Muses,9,2,3,
+GC-370,Fragment 370 — The Muses,The Muses,10,1,2,
+GC-371,Fragment 371 — The Muses,The Muses,1,2,2,
+GC-372,Fragment 372 — The Muses,The Muses,2,5,4,
+GC-373,Fragment 373 — The Muses,The Muses,3,5,1,
+GC-374,Fragment 374 — The Muses,The Muses,4,2,2,
+GC-375,Fragment 375 — The Muses,The Muses,5,3,3,urban
+GC-376,Fragment 376 — The Muses,The Muses,6,3,2,
+GC-377,Fragment 377 — The Muses,The Muses,7,3,1,
+GC-378,Fragment 378 — The Muses,The Muses,8,3,2,urban
+GC-379,Fragment 379 — The Muses,The Muses,9,3,5,urban
+GC-380,Fragment 380 — The Muses,The Muses,3,1,4,
+GC-381,Fragment 381 — The Muses,The Muses,4,3,5,urban
+GC-382,Fragment 382 — The Muses,The Muses,5,4,3,
+GC-383,Fragment 383 — The Muses,The Muses,6,3,4,
+GC-384,Fragment 384 — The Muses,The Muses,7,1,4,urban
+GC-385,Fragment 385 — The Muses,The Muses,8,2,3,
+GC-386,Fragment 386 — The Muses,The Muses,9,4,4,
+GC-387,Fragment 387 — The Muses,The Muses,3,3,3,
+GC-388,Fragment 388 — The Muses,The Muses,4,4,1,
+GC-389,Fragment 389 — The Muses,The Muses,5,2,1,
+GC-390,Fragment 390 — The Muses,The Muses,6,1,5,
+GC-391,Fragment 391 — The Muses,The Muses,7,3,5,urban
+GC-392,Fragment 392 — The Muses,The Muses,9,5,2,
+GC-393,Fragment 393 — The Muses,The Muses,3,1,1,
+GC-394,Fragment 394 — The Muses,The Muses,4,5,1,
+GC-395,Fragment 395 — The Muses,The Muses,7,4,1,
+GC-396,Fragment 396 — The Muses,The Muses,9,5,3,urban
+GC-397,Fragment 397 — The Muses,The Muses,3,2,1,
+GC-398,Fragment 398 — The Muses,The Muses,9,4,5,
+GC-399,Fragment 399 — The Muses,The Muses,9,4,1,
+GC-400,Fragment 400 — The Muses,The Muses,9,4,3,urban
+GC-401,Fragment 401 — The Voyage,The Voyage,1,4,2,
+GC-402,Fragment 402 — The Voyage,The Voyage,2,3,1,
+GC-403,Fragment 403 — The Voyage,The Voyage,3,2,2,urban
+GC-404,Fragment 404 — The Voyage,The Voyage,4,2,1,
+GC-405,Fragment 405 — The Voyage,The Voyage,5,2,3,
+GC-406,Fragment 406 — The Voyage,The Voyage,6,1,2,urban
+GC-407,Fragment 407 — The Voyage,The Voyage,7,4,1,
+GC-408,Fragment 408 — The Voyage,The Voyage,8,3,4,
+GC-409,Fragment 409 — The Voyage,The Voyage,9,2,1,urban
+GC-410,Fragment 410 — The Voyage,The Voyage,10,3,2,
+GC-411,Fragment 411 — The Voyage,The Voyage,1,2,4,
+GC-412,Fragment 412 — The Voyage,The Voyage,2,4,3,
+GC-413,Fragment 413 — The Voyage,The Voyage,3,4,1,urban
+GC-414,Fragment 414 — The Voyage,The Voyage,4,5,2,
+GC-415,Fragment 415 — The Voyage,The Voyage,5,4,3,
+GC-416,Fragment 416 — The Voyage,The Voyage,6,3,2,urban
+GC-417,Fragment 417 — The Voyage,The Voyage,7,5,2,
+GC-418,Fragment 418 — The Voyage,The Voyage,8,1,2,
+GC-419,Fragment 419 — The Voyage,The Voyage,9,5,1,
+GC-420,Fragment 420 — The Voyage,The Voyage,10,2,3,
+GC-421,Fragment 421 — The Voyage,The Voyage,1,2,1,
+GC-422,Fragment 422 — The Voyage,The Voyage,2,4,5,
+GC-423,Fragment 423 — The Voyage,The Voyage,3,5,5,
+GC-424,Fragment 424 — The Voyage,The Voyage,5,1,4,
+GC-425,Fragment 425 — The Voyage,The Voyage,6,5,4,
+GC-426,Fragment 426 — The Voyage,The Voyage,7,3,1,
+GC-427,Fragment 427 — The Voyage,The Voyage,8,5,2,
+GC-428,Fragment 428 — The Voyage,The Voyage,9,5,5,
+GC-429,Fragment 429 — The Voyage,The Voyage,10,4,5,urban
+GC-430,Fragment 430 — The Voyage,The Voyage,1,3,4,urban
+GC-431,Fragment 431 — The Voyage,The Voyage,5,4,1,urban
+GC-432,Fragment 432 — The Voyage,The Voyage,7,5,5,
+GC-433,Fragment 433 — The Voyage,The Voyage,8,2,4,
+GC-434,Fragment 434 — The Voyage,The Voyage,9,4,5,
+GC-435,Fragment 435 — The Voyage,The Voyage,10,3,4,urban
+GC-436,Fragment 436 — The Voyage,The Voyage,1,3,1,
+GC-437,Fragment 437 — The Voyage,The Voyage,5,5,5,
+GC-438,Fragment 438 — The Voyage,The Voyage,7,1,5,
+GC-439,Fragment 439 — The Voyage,The Voyage,8,3,5,urban
+GC-440,Fragment 440 — The Voyage,The Voyage,9,4,1,urban
+GC-441,Fragment 441 — The Voyage,The Voyage,10,5,2,
+GC-442,Fragment 442 — The Voyage,The Voyage,1,4,5,
+GC-443,Fragment 443 — The Voyage,The Voyage,5,3,1,
+GC-444,Fragment 444 — The Voyage,The Voyage,8,1,5,
+GC-445,Fragment 445 — The Voyage,The Voyage,9,3,4,
+GC-446,Fragment 446 — The Voyage,The Voyage,10,3,1,
+GC-447,Fragment 447 — The Voyage,The Voyage,1,3,5,urban
+GC-448,Fragment 448 — The Voyage,The Voyage,8,1,3,
+GC-449,Fragment 449 — The Voyage,The Voyage,10,1,4,
+GC-450,Fragment 450 — The Voyage,The Voyage,1,1,5,
+GC-451,Fragment 451 — The Feast,The Feast,1,2,4,
+GC-452,Fragment 452 — The Feast,The Feast,2,2,3,
+GC-453,Fragment 453 — The Feast,The Feast,3,2,3,
+GC-454,Fragment 454 — The Feast,The Feast,4,2,1,
+GC-455,Fragment 455 — The Feast,The Feast,5,4,5,
+GC-456,Fragment 456 — The Feast,The Feast,6,5,4,
+GC-457,Fragment 457 — The Feast,The Feast,7,1,1,
+GC-458,Fragment 458 — The Feast,The Feast,8,4,2,
+GC-459,Fragment 459 — The Feast,The Feast,9,4,2,
+GC-460,Fragment 460 — The Feast,The Feast,10,1,2,
+GC-461,Fragment 461 — The Feast,The Feast,1,5,4,urban
+GC-462,Fragment 462 — The Feast,The Feast,2,3,3,urban
+GC-463,Fragment 463 — The Feast,The Feast,3,4,2,
+GC-464,Fragment 464 — The Feast,The Feast,4,5,4,urban
+GC-465,Fragment 465 — The Feast,The Feast,5,4,4,
+GC-466,Fragment 466 — The Feast,The Feast,6,1,2,
+GC-467,Fragment 467 — The Feast,The Feast,7,1,5,
+GC-468,Fragment 468 — The Feast,The Feast,8,4,5,
+GC-469,Fragment 469 — The Feast,The Feast,9,5,5,
+GC-470,Fragment 470 — The Feast,The Feast,10,5,5,
+GC-471,Fragment 471 — The Feast,The Feast,1,5,5,
+GC-472,Fragment 472 — The Feast,The Feast,2,3,1,
+GC-473,Fragment 473 — The Feast,The Feast,3,3,5,
+GC-474,Fragment 474 — The Feast,The Feast,4,1,3,
+GC-475,Fragment 475 — The Feast,The Feast,5,5,1,urban
+GC-476,Fragment 476 — The Feast,The Feast,6,2,2,
+GC-477,Fragment 477 — The Feast,The Feast,7,5,5,
+GC-478,Fragment 478 — The Feast,The Feast,8,2,2,urban
+GC-479,Fragment 479 — The Feast,The Feast,9,5,1,
+GC-480,Fragment 480 — The Feast,The Feast,10,5,2,
+GC-481,Fragment 481 — The Feast,The Feast,1,4,4,
+GC-482,Fragment 482 — The Feast,The Feast,2,4,2,urban
+GC-483,Fragment 483 — The Feast,The Feast,3,2,5,urban
+GC-484,Fragment 484 — The Feast,The Feast,4,2,5,
+GC-485,Fragment 485 — The Feast,The Feast,5,3,1,
+GC-486,Fragment 486 — The Feast,The Feast,6,1,4,
+GC-487,Fragment 487 — The Feast,The Feast,7,1,2,
+GC-488,Fragment 488 — The Feast,The Feast,8,5,5,urban
+GC-489,Fragment 489 — The Feast,The Feast,9,1,3,
+GC-490,Fragment 490 — The Feast,The Feast,10,1,1,
+GC-491,Fragment 491 — The Feast,The Feast,1,5,2,
+GC-492,Fragment 492 — The Feast,The Feast,2,5,5,
+GC-493,Fragment 493 — The Feast,The Feast,4,4,5,urban
+GC-494,Fragment 494 — The Feast,The Feast,7,3,5,
+GC-495,Fragment 495 — The Feast,The Feast,8,5,3,urban
+GC-496,Fragment 496 — The Feast,The Feast,9,1,2,
+GC-497,Fragment 497 — The Feast,The Feast,4,3,2,urban
+GC-498,Fragment 498 — The Feast,The Feast,7,4,1,
+GC-499,Fragment 499 — The Feast,The Feast,8,2,1,
+GC-500,Fragment 500 — The Feast,The Feast,8,1,2,urban
+GC-R01,The Midnight Vault,Rarities,,,,rare
+GC-R02,The Grey Procession,Rarities,,,,rare
+GC-R03,The Golden Ground,Rarities,,,,rare
+GC-R04,The Tesserae,Rarities,,,,rare
+GC-R05,The Window,Rarities,,,,rare
+GC-R06,The Cartoon,Rarities,,,,rare
+GC-R07,The Stone Inlay,Rarities,,,,rare
+GC-R08,The Tapestry,Rarities,,,,rare
+GC-R09,The Charred Corner,Rarities,,,,rare
+GC-R10,The Bloom,Rarities,,,,rare
+GC-R11,The Incised Panel,Rarities,,,,rare
+GC-R12,The Ultramarine Extravagance,Rarities,,,,rare
+GC-R13,The Pilgrims' Marks,Rarities,,,,rare
+GC-R14,The Restoration,Rarities,,,,rare
+GC-R15,The Mirror,Rarities,,,,rare
+GC-R16,The Oculus,Rarities,,,,rare
+GC-R17,The Keystone,Rarities,,,,rare
+GC-R18,The Self-Portrait,Rarities,,,,rare
+GC-R19,The Night Writing,Rarities,,,,rare
+GC-R20,The Unpainted Heaven,Rarities,,,,rare

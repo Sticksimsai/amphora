@@ -1,0 +1,17 @@
+[profile.default]
+via_ir = true
+src = "src"
+out = "out"
+libs = ["lib"]
+solc = "0.8.24"
+optimizer = true
+optimizer_runs = 500
+
+# Elysium (Kinetiq). Do NOT use viem/foundry's built-in "elysium" aliases:
+# those are Vulcan Forged's unrelated chain (1338/1339).
+[rpc_endpoints]
+elysium_testnet = "${TESTNET_RPC_URL}"   # chain 99801
+elysium         = "${RPC_URL}"           # chain 99901 — use a keyed provider
+
+[etherscan]
+elysium_testnet = { key = "blockscout", chain = 99801, url = "https://elysium.kinetiq.xyz/api" }

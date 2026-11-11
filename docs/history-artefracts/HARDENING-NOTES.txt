@@ -1,0 +1,1 @@
+hardening note: settler should write wonTier/wonTokenId/certificateId back to draws row

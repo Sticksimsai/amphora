@@ -1,0 +1,542 @@
+id,title,class,cap,markHype,tier,grade,series
+S1-F01,Sleeping Cat,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+S1-F02,Seated Hound,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+S1-F03,Crouching Hare,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+S1-F04,Perched Dove,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+S1-F05,Shepherd's Dog,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+S1-F06,Tabby with Fish,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+S1-F07,Grey Mare,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+S1-F08,Owl at Dusk,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+S1-F09,White Cat on Lapis,OLYMPIAN,5,3.5,3,Ω,Season I — The Fractured Fresco
+S1-F10,Leaping Greyhound,OLYMPIAN,5,3.5,3,Ω,Season I — The Fractured Fresco
+S1-F11,Fox with Gilded Brush,OLYMPIAN,5,3.5,3,Ω,Season I — The Fractured Fresco
+S1-F12,Peacock Regarding a Star,OLYMPIAN,5,3.5,3,Ω,Season I — The Fractured Fresco
+S1-F13,Constellation of the Great Cat,OLYMPIAN,5,3.5,3,Ω,Season I — The Fractured Fresco
+S1-F14,Hounds in the Painted Frame,OLYMPIAN,5,3.5,3,Ω,Season I — The Fractured Fresco
+S1-F15,Ascent of the Winged Horse,OLYMPIAN,5,3.5,3,Ω,Season I — The Fractured Fresco
+S1-F16,Owl of the Night Office,OLYMPIAN,5,3.5,3,Ω,Season I — The Fractured Fresco
+S1-F17,The Lion Enthroned,OLYMPIAN,5,3.5,3,Ω,Season I — The Fractured Fresco
+S1-F18,Madonna of the Cats,OLYMPIAN,5,3.5,3,Ω,Season I — The Fractured Fresco
+S1-F19,The Hound of the Saint,OLYMPIAN,5,3.5,3,Ω,Season I — The Fractured Fresco
+S1-F20,The Cat in Glory,OLYMPIAN,5,3.5,3,Ω,Season I — The Fractured Fresco
+S1-F21,The Dog in Glory,OLYMPIAN,5,3.5,3,Ω,Season I — The Fractured Fresco
+GC-001,Fortune's Overflowing Horn,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-002,The Wheel Turned by an Angel,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-003,The Dice Beyond the Fence,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-004,Chance upon the Golden Sphere,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-005,The Quarrel over a Coin,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-006,The Blind Archer,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-007,The Sleep of Plenty,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-008,The Two Covered Cups,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-009,The Ladder of Gilded Rungs,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-010,The Broken Wheel,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-011,Fortuna at Daybreak,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-012,The Music of the Wheel,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-013,The Dice and the Burning Thread,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-014,The Dancer on the Rolling Orb,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-015,The Coin of Discord,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-016,The Arrow of Gold,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-017,The Dreaming Giver,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-018,The Choice of the Youth,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-019,The Climb Through the Storm,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-020,The Menders of Fortune,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-021,The Blindfolded Benefactress,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-022,The Rise and the Fall,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-023,The Young Gambler's Cast,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-024,Allegory of Balanced Chance,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-025,The Laughing Third,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-026,The Archer of Daybreak,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-027,The Gleaners of Heaven,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-028,The Masked Offering,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-029,The Scattered Spokes,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-030,The Cornucopia Overturned,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-031,The Wheel at Dawn,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-032,The Wager at the Fence,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-033,The Orbit of Coins,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-034,The Spilled Purse,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-035,Plenty Behind the Fence,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-036,The Hidden Portion,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-037,The Wheel and the Gilded Deck,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-038,Our Lady of the Golden Rain,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-039,The Great Gilded Wheel,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-040,The Elder and the Dice,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-041,The Scarf in the Wind,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-042,The Dispute at Dawn,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-043,The Drift of Coins,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-044,The Veiled Vessels,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-045,The Putto with the Camera,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-046,Allegory of Blind Bounty,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-047,The Hooded Sleeper,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-048,The Hesitant Hand,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-049,Fortune's Twin Chalices,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-050,The Mask and the Cup,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-051,The Chart of Rising Stars,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-052,The Chariot of the Dawn,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-053,The Lighter of Stars,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-054,The Veiled Moon,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-055,The Flash upon the Rings,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-056,The Comet as a Youth,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-057,The Dance of the Zodiac,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-058,The Star in the Net,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-059,The Exchange of the Hourglass,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-060,The Stairway of Lanterns,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-061,The Unrolled Heavens,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-062,The Pale Horses of Morning,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-063,The Taper of Heaven,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-064,The Ewer of Silver Light,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-065,The Golden Orb Aloft,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-066,The Runner with Hair of Fire,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-067,The Ring of Twelve,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-068,The Fisherman of Heaven,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-069,The Hourglass of Sun and Moon,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-070,The Constellations Set Free,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-071,The Triumph of Aurora,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-072,The Apron of Unlit Stars,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-073,The Pouring of Moonlight,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-074,The Bridges of the Sphere,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-075,The Fiery Messenger,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-076,The Circle and the Crowned Bird,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-077,The Catch of Light,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-078,The Two Thrones of Heaven,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-079,The Golden Map of Night,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-080,Aurora and the Gilded Deck,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-081,The Kindling of the Firmament,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-082,Our Lady of the Silver Ewer,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-083,The Scholars on the Rings,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-084,The Youth Across the Vault,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-085,The Netted Radiance,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-086,The Hourglass at Dawn,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-087,The Extinguishing of the Stars,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-088,The Angel of the Taper,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-089,The Moon's Silver Offering,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-090,The Comet and the Crowned Pigeon,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-091,The Fisher's Blinding Prize,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-092,The Breaking of Night,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-093,The First Stars Kindled,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-094,The Blazing Course,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-095,The Haul of Fallen Light,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-096,The Coursers of Daybreak,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-097,The Lamplighter of Heaven,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-098,The Comet in Slate Light,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-099,The Star Between Two Clouds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-100,The Cold Vault Alight,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-101,The Ring of Crafts,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-102,The Forging of a Star,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-103,The Loom of Light,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-104,The Mason of the Arch,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-105,The Painter of Clouds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-106,The City in the Glass,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-107,The Pages Rising Like Doves,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-108,The Keel of the Crescent Moon,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-109,The Pouring of the Bell,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-110,The Clock with Hands of Sunbeams,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-111,The Brotherhood of Makers,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-112,The Sparks Become Birds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-113,The Weaving of the Dawn,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-114,The Bucket of Golden Mortar,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-115,The Sky Half Finished,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-116,The Glassblower's Sphere,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-117,The Press upon the Cloud,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-118,The Celestial Shipwright,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-119,The Bell Mould in the Clouds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-120,The Adjustment of the Hours,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-121,The Crafts Joined Hand in Hand,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-122,The Smith of the Clouds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-123,The Cloth of Morning Sky,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-124,The Arch and the Flash,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-125,The Underdrawing of Heaven,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-126,The Breath That Built a City,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-127,The Boat of the New Moon,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-128,The Founder's Golden Light,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-129,The Hours and the Golden Song,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-130,The Guild of Heaven,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-131,The Loom of Morning Light,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-132,The Maker of Clouds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-133,The City in the Glass of Trades,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-134,The Keel of the Crescent Moon of Trades,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-135,The Casting of the Golden Bell,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-136,The Ring of the Four Crafts,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-137,The Weaver of Sunbeams,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-138,The Painter of the Unfinished Sky,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-139,The Glassblower's Vigil,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-140,The Shipwright of Heaven,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-141,The Founder's Molten Hymn,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-142,The Concord of the Makers,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-143,Allegory of the Woven Dawn,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-144,The Brush That Builds Heaven,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-145,The Sphere of the Hidden City,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-146,The Vessel of the Moon,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-147,The Circle of Joined Hands,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-148,The Scaffold Among Clouds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-149,The Dance of the Guilds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-150,The Crowned Bird of the Cornice,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-151,The Heart That Outweighs Gold,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-152,The Cloak Become a Cloud,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-153,The Bearer of the Broken Column,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-154,The Pouring Across the Sky,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-155,The Double-Faced Reader,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-156,The Anchor Cast to Heaven,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-157,The Lamp of the Kneeling Flame,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-158,The Olive Wreath Descending,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-159,The Rope of Storms,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-160,The Emptied Cornucopia,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-161,The Tilted Scales of Justice,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-162,Our Lady of the Sheltering Mantle,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-163,The Calm Beneath the Column,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-164,Temperance of the Two Ewers,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-165,Prudence and the Sleeping Serpent,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-166,Hope's Ascending Anchor,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-167,The Pilgrim's Lamp,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-168,The Refused Crowns,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-169,Patience Unbound by Light,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-170,The Horn of Plenty Overturned,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-171,Charity's Golden Canopy,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-172,The Armoured Maiden's Burden,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-173,The Water That Tames the Wine,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-174,The Anchor Caught in Clouds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-175,The Flame That Prays,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-176,Humility Among Fallen Gold,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-177,The Fraying Tempest,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-178,Generosity's Open Hands,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-179,The Mother of Three Refuges,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-180,The Unbowed Shoulder,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-181,The Stream Between the Vessels,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-182,The Upward Mooring,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-183,Faith at the Amber Dawn,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-184,The Plain Wreath of Glory,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-185,The Stillness That Frays the Rope,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-186,The Rain of Abundance,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-187,The Shelter in the Storm of Light,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-188,Allegory of Unbroken Strength,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-189,The Golden Measure,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-190,The Lantern in the Golden Burst,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-191,The Crown She Would Not Take,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-192,The Knotted Clouds Undone,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-193,The Bounty Poured at Dawn,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-194,Allegory of the Mingled Cup,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-195,The Lamp Beneath the Opening Sky,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-196,The Gilded Deck at Her Feet,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-197,The Candle-Warm Devotion,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-198,Humility at First Light,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-199,The Little Kneeler of Light,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-200,The Winged Coronation,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-201,The Chest of Vanishing Gold,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-202,The Feast Beyond the Torn Cloud,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-203,The Staircase Into Nothing,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-204,The Sword Become a Serpent,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-205,The Sleeper on the Tapestry,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-206,The Banquet of Smoke,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-207,The Mirror of the Rose-Wreathed Skull,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-208,The Gilded Apple's Secret,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-209,The Procession of the Chained,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-210,The Table on the Tilting Cloud,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-211,Greed's Smoking Treasure,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-212,Envy at the Rent in Heaven,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-213,Pride's Ascent to Empty Air,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-214,Wrath Turned Upon Itself,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-215,The Unfinished Threads,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-216,The Feast of Empty Dishes,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-217,Vanity's True Reflection,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-218,The Rotten Gift,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-219,The Candle That Leads the Vices,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-220,The Cards Sliding to the Abyss,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-221,The Gold That Turns to Smoke,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-222,The Green Watcher,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-223,The Climb That Ends in Sky,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-224,The Blade That Bites Its Master,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-225,Sloth Amid Tugging Angels,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-226,Gluttony's Vaporous Table,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-227,The Skull Among Roses,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-228,Deceit and the Telling Basin,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-229,The Triumph of the Small Flame,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-230,The Oblivious Wager,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-231,The Miser at Daybreak,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-232,The Hunger at the Window of Clouds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-233,The Crowned Climber,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-234,The Serpent of the Raised Arm,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-235,The Dream That Will Not Wake,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-236,The Glass That Tells the Truth,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-237,The Captives at Dawn,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-238,The Hoard Dissolving,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-239,The Uninvited Gaze,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-240,The Last Step of Pride,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-241,The Hooded Sleeper of Vices,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-242,The March Beneath the Opening,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-243,The Clutch of Empty Riches,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-244,The Stair Without a Summit,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-245,The Idle Loom's Repose,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-246,The Little Light Before the Chained,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-247,The Miser's Amber Hour,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-248,The Slumber at Dawn,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-249,Allegory of the Smoking Coffer,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-250,The Fingers Full of Smoke,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-251,The Maiden Trailing Flowers,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-252,The Sickle Hung on a Sunbeam,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-253,The Shaking of the Great Vine,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-254,The Breath of Silver Frost,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-255,The Dance Around the Changing Tree,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-256,The Brazier on the Snowy Cloud,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-257,The Serpent of the Twelve Months,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-258,The Crowning of the Farmer,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-259,The First Swallow Set Free,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-260,Frost and Thaw at Wrestle,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-261,The Maiden of the Rooted Garland,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-262,The Sleeping Reaper of the Clouds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-263,The Shaking of the Great Vine of Seasons,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-264,Old Winter Portrayed by a Putto,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-265,The Round of the Four Seasons,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-266,The Brazier on the Snowy Cloud of Seasons,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-267,The Serpent of the Twelve Months of Seasons,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-268,The Crowning of the Kneeling Farmer,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-269,The First Swallow Set Free of Seasons,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-270,The Wrestlers of Silver and Gold,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-271,Spring Trailing Her Rope of Flowers,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-272,The Sickle Hung upon a Sunbeam,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-273,Allegory of the Falling Grapes,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-274,The Frost-Breath and the Flash,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-275,The Dance about the Changing Tree,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-276,The Warming of Cold Hands,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-277,The Year Bound in Iron Links,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-278,The Wheat Crown Bestowed,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-279,The Opening of the Gilded Cage,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-280,The Contest of Frost and Thaw,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-281,The Flowering Course of Spring,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-282,Summer Asleep in the Floating Wheat,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-283,The Vintage Below the Cloud Line,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-284,The Hooded Companion of Winter,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-285,The Tree That Flowers as They Pass,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-286,Allegory of the Endless Year,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-287,Harvest Rewarding Her Laborer,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-288,The Swallow and the Golden Orb,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-289,Frost and Thaw at Dawn,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-290,Our Lady of the Running Blossom,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-291,Autumn Casting Down Her Clusters,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-292,Winter Breathing Lace upon the Sky,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-293,The Ouroboros and the Gilded Deck,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-294,The Churning of the Cold Clouds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-295,The Triumph of the Vintage,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-296,The Old Man of the Silver Frost,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-297,The Coiled Year by Candlelight,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-298,Allegory of the Frozen Breath,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-299,The Serpent Crowned in Red Light,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-300,The Frost and the Golden Music,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-301,The Urn That Becomes a Waterfall,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-302,The Phoenix-Crowned Bearer of Flame,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-303,The Combing of the Winds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-304,The Giantess of Hills and Orchards,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-305,The Keeper of the Sack of Storms,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-306,The Compass of the Four Elements,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-307,The Staircase of Silver Fish,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-308,The Drawn Bow of Lightning,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-309,The Salamander in the Roses,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-310,The Shearing of the Clouds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-311,The River God's Leaping Fish,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-312,The Small Sun in Her Palm,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-313,Earth Reclining as a Landscape,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-314,The Haloed Holder of Tempests,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-315,The Gilded Rose of the World,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-316,The Spiral Stair of Water,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-317,The Arrow Not Yet Loosed,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-318,The Sleeping Flame at Dawn,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-319,The Fleece of Heaven,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-320,Ecstasy of the Tamed Fire,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-321,The Body That Is a Country,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-322,The Escaping Spirals of Storm,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-323,The Four Signs at the Corners,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-324,The Halo of Golden Mist,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-325,The Storm Spirit's Golden Bow,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-326,The Nest of Unburnt Roses,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-327,The Red Thread among the Fleece,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-328,Our Lady of the Quiet Flame,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-329,Earth and the Iron Garland,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-330,The Striving God of Winds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-331,Allegory of the Elemental Compass,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-332,The Climbing of the Waterspout,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-333,The Archer of the Thunderhead,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-334,The Slumber of Living Fire,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-335,The Winged Shepherds of the Sky,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-336,The Tempest Fenced with Iron,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-337,The Elements at Their Stations,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-338,The Fish That Climb to Heaven,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-339,The Bowman and the Putto's Flash,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-340,The Rose-Cradled Salamander,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-341,The Harvest of the Fleece,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-342,The Serene Ship Below the Storm,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-343,The Concord of the Four Elements,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-344,The Golden Bow Bent in Glory,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-345,The Shorn Flock of Clouds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-346,The Wind-God Straining at Dawn,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-347,The Archer of the Amber Dawn,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-348,The Bow Warmed by Candlelight,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-349,The Archer's Gilded Serenade,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-350,The Cold Light of the Drawn Bow,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-351,The Lyre Strung with Light,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-352,The Book Whose Pages Are Clouds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-353,The Leap Between Two Clouds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-354,The Mask That Weeps into Gold,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-355,The Laughing Mask Set Loose,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-356,The Sphere of Constellations,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-357,The Verse That Writes Itself,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-358,The Finger That Stills the Storm,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-359,The Ascending Spiral of Nine,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-360,The Viol with the Sleeping Scroll,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-361,The Notes That Became Birds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-362,The Historian's Misted Halo,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-363,The Arc of the Dancer,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-364,The Weeping Mask Beheld,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-365,The Hooded Witness of Laughter,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-366,The Muse within the Starry Globe,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-367,The Sleeping Poet's Golden Letters,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-368,The Lightning Paused Mid-Fork,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-369,The Nine Rising toward the Light,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-370,The Tuning of the Carved Sleeper,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-371,The Laurel-Crowned Player of Beams,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-372,History Writing the Sky,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-373,The Muse Mid-Leap,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-374,The Gilded Cup of Tears,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-375,Comedy among the Startled,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-376,The Cold Glass of the Heavens,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-377,The Desk upon the Cloud,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-378,Music Commanding the Tempest,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-379,The Spiral Veined with Red Light,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-380,The Dancer of the Amber Morning,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-381,Tragedy and the Crowned Pigeon,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-382,The Mask That Floats Up Laughing,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-383,Astronomy in Her Crystal Sphere,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-384,The Poet and the Crowned Pigeon,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-385,The Hush Before the Thunder,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-386,The Muses Seen from Below,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-387,The Drapery of the Finished Leap,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-388,Allegory of the Weeping Mask,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-389,The Triumph of Laughter,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-390,The Star-Bound Muse at Dawn,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-391,The Verse That Writes Itself of Muses,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-392,The Spiral of the Nine,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-393,The Leap Between Two Clouds of Muses,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-394,The Mask That Weeps,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-395,The Sleeping Poet's Gold,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-396,The Nine Ascending,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-397,Allegory of the Dancer's Arc,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-398,The Ladder of the Muses,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-399,Chorus Rising to the Light,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-400,The Muses Surprised by Light,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-401,The Ship of Winged Winds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-402,The Bridge of Light,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-403,The Anchor from Heaven,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-404,The Beacon Above the Clouds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-405,The Cartographer of Clouds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-406,The Ferryman of Dawn,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-407,The Return of the Voyager,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-408,The Silver Fish Pointing Home,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-409,The Bridled Storm,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-410,Hauling Down the Sun,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-411,The Gilded Barque Aloft,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-412,The Pilgrim Between Storms,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-413,Hope on a Golden Chain,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-414,The Lighthouse of Pale Heaven,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-415,The Balloon of the Mapmaker,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-416,The Barge of Souls,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-417,The Embrace at the Threshold,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-418,The Compass of the Dawn,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-419,The Laughing Tamer,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-420,The Hawsers of Gold,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-421,Angels Filling the Sails,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-422,The Staff and the Thunderheads,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-423,The Raft Beneath the Chain,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-424,Charting the Islands of Dawn,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-425,Crossing the Banks of Cumulus,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-426,The Boat Dissolving to Mist,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-427,The Needle That Leapt,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-428,The Monster Made Gentle,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-429,The Sun Brought to Harbour,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-430,The Crowned Pigeon's Voyage,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-431,The Mapmaker's Gilded Ascent,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-432,Homecoming Beneath the Opening Sky,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-433,The Rose of All Winds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-434,The Youth and the Tempest,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-435,The Lowering of the Sun,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-436,The Vessel of the Clouds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-437,The Atlas of Open Sky,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-438,The Wanderer Home at Dawn,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-439,The Rose That Sings,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-440,The Serpent in Crimson Light,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-441,Sunset Drawn by Ropes,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-442,The Ship Borne by Blessing,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-443,The Mapper of Silver Isles,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-444,The Fish That Knows the Way,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-445,The Storm Beast Subdued,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-446,The Sailors' Evening Labour,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-447,The Ship of the Golden Mist,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-448,The Mariner's Living Rose,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-449,The Last Haul of Day,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-450,The Dawn Flotilla,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-451,The Rainbow Table,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-452,The Wine That Falls Upward,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-453,The Balcony of Musicians,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-454,The Breaking of the Loaf,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-455,The Toast of Gilded Cups,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-456,The Empty Chair Garlanded,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-457,The Dog of White Mist,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-458,The Pie of Living Song,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-459,The Last Guest Asleep,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-460,The Grace Before the Feast,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-461,The Wedding in the Clouds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-462,The Cupbearer of the Higher Cloud,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-463,Music for the Cloud Dancers,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-464,Bread Across the Open Sky,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-465,The Ring of Raised Cups,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-466,The Laurel for the Absent,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-467,Sweetmeats Beneath the Table,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-468,The Songbirds Set Free,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-469,Dawn Over the Overturned Cups,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-470,The One Who Peeked,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-471,The Feast of Impatient Angels,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-472,The Upward Libation,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-473,The Consort Above the Dance,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-474,The Loaf of Many Hands,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-475,The Beam Among the Cups,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-476,The Place Kept in Gold,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-477,The Children Under the Feast,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-478,The Ascent from the Pie,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-479,The Sleeper Among the Cups,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-480,Every Head Bowed but One,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-481,The Bride's Ring of Clouds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-482,Wine Rising to Heaven,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-483,The Players Caught by Light,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-484,The Bread Between Heavens,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-485,The Toast in Cool Silver,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-486,The Chair of the Awaited Guest,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-487,The Secret Sharers,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-488,The Spiral of Songbirds,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-489,The Revel's Quiet End,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-490,The Blessing and the Glance,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-491,The Banquet of Seven Colours,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-492,The Miracle of the Cup,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-493,The Loaf and the Crimson Line,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-494,The Stolen Sweets in Shadow,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-495,Songbirds Through the Fence,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-496,The Morning After the Feast,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-497,The Witnessed Breaking of Bread,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-498,The Mist Hound's Portion,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-499,The Birds Toward the Vault,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-500,The Dawn Chorus Released,MORTAL,300,0.35,1,VII,Season I — The Fractured Fresco
+GC-R01,The Midnight Vault,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+GC-R02,The Marble Procession,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+GC-R03,Fortuna on the Field of Gold,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+GC-R04,The Wheel of a Thousand Tiles,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+GC-R05,The Trumpeter in Burning Glass,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+GC-R06,The Hourglass Study in Red,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+GC-R07,The Voyage in Hardstone,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+GC-R08,The Woven Choir,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+GC-R09,The Feast That Fire Spared,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+GC-R10,The Muse Beneath the Frost,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+GC-R11,The Zodiac Cut in Gold,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+GC-R12,The Deep Blue of Hope,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+GC-R13,Charity of a Thousand Names,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+GC-R14,The Restorer's Confession,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+GC-R15,The Mirror of the Chapel,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+GC-R16,The Eye of Heaven,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+GC-R17,The Wind God's Keystone,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+GC-R18,The Painter's Own Face,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+GC-R19,The Weight of Heaven,HERO,25,1.05,2,X,Season I — The Fractured Fresco
+GC-R20,Alone in Colour and Gold,HERO,25,1.05,2,X,Season I — The Fractured Fresco

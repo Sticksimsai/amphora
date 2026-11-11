@@ -1,0 +1,25 @@
+# secrets — never commit
+.env
+.env.*
+!.env.example
+*.key
+.x-tokens.json
+seed-root*
+signature.png
+
+# build output and dependencies
+node_modules/
+contracts/out/
+contracts/cache/
+contracts/lib/
+contracts/broadcast/
+__pycache__/
+*.pyc
+.DS_Store
+
+# generated per deployment
+masters/
+slabs/
+cards/
+coa/
+artwork_registry.csv
