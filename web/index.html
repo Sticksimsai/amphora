@@ -48,12 +48,10 @@
       <p class="meta note" id="status" role="status"></p>
     </div>
 
-    <div class="plinth">
-      <div class="spin" id="spin" tabindex="0" role="button" aria-label="A slab. Drag to turn it, or press Enter to flip it.">
-        <div class="face front"><img src="img/slab-olympian.webp" alt="An Olympian slab: a fresco fragment of Pegasus, grade Omega" draggable="false"></div>
-        <div class="face back"><img src="img/card-back.jpg" alt="The back of the card: a radiate sun in a Greek key frame" draggable="false"></div>
-      </div>
-      <p class="hint">Drag to turn</p>
+    <div class="float" id="float" aria-label="Three slabs from the season">
+      <figure class="card c-hero" data-class="Hero" tabindex="0"><img src="img/slab-hero.webp" alt="A Hero slab, grade X" draggable="false"><figcaption></figcaption></figure>
+      <figure class="card c-mortal" data-class="Mortal" tabindex="0"><img src="img/slab-mortal.webp" alt="A Mortal slab, grade VII" draggable="false"><figcaption></figcaption></figure>
+      <figure class="card c-olympian" data-class="Olympian" tabindex="0"><img src="img/slab-olympian.webp" alt="An Olympian slab, grade Omega" draggable="false"><figcaption></figcaption></figure>
     </div>
   </div>
 
@@ -128,10 +126,10 @@
   <div class="shelf rise">
     <img class="cert" src="img/certificate.jpg" alt="An Amphora certificate: the work's slab over an antique mural, with its edition number and serial" loading="lazy" data-tilt>
     <div class="gallery">
-      <button class="thumb on" data-slab="olympian" aria-label="Olympian slab"><img src="img/slab-olympian.webp" alt=""></button>
-      <button class="thumb" data-slab="hero" aria-label="Hero slab"><img src="img/slab-hero.webp" alt=""></button>
-      <button class="thumb" data-slab="mortal" aria-label="Mortal slab"><img src="img/slab-mortal.webp" alt=""></button>
-      <p class="fine left">Pick a slab to put it on the plinth at the top of the page.</p>
+      <figure class="thumb"><img src="img/slab-olympian.webp" alt="Olympian slab" loading="lazy"><figcaption>Olympian · 5</figcaption></figure>
+      <figure class="thumb"><img src="img/slab-hero.webp" alt="Hero slab" loading="lazy"><figcaption>Hero · 25</figcaption></figure>
+      <figure class="thumb"><img src="img/slab-mortal.webp" alt="Mortal slab" loading="lazy"><figcaption>Mortal · 300</figcaption></figure>
+      <p class="fine left">Edition sizes per work. Every slab carries its number on the label and in the chip.</p>
     </div>
   </div>
 </section>

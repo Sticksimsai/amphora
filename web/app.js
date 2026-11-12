@@ -38,7 +38,7 @@
     const by = Object.fromEntries(m.tiers.map((t) => [t.name.toUpperCase(), t]));
     box = m.priceHype;
     classes = classes.map((k) => { const t = by[k.name.toUpperCase()]; return { ...k, ppm: t && t.available > 0 ? Math.round(t.probability * 1e6) : 0 }; });
-    renderLadder();
+    renderLadder(); captions();
   }).catch(() => {});
 
   // ── the demo machine ──────────────────────────────────────────────────
@@ -129,28 +129,20 @@
     new IntersectionObserver(([e]) => { e.isIntersecting ? vid.play().catch(() => {}) : vid.pause(); }).observe(vid);
   }
 
-  // ── the plinth: drag the slab round, let go and it settles on a face ───
-  const spin = $('spin'), hint = document.querySelector('.hint');
-  let ang = 0, startX = 0, startAng = 0, moved = 0, held = false;
-  const setAng = (a, rx) => { ang = a; spin.style.setProperty('--ry', a + 'deg'); spin.style.setProperty('--rx', (rx || 0) + 'deg'); };
-  spin.addEventListener('pointerdown', (e) => { held = true; moved = 0; startX = e.clientX; startAng = ang; spin.classList.add('live'); spin.setPointerCapture(e.pointerId); });
-  spin.addEventListener('pointermove', (e) => {
-    if (!held) return; const dx = e.clientX - startX; moved = Math.max(moved, Math.abs(dx));
-    setAng(startAng + dx * 0.9, Math.max(-14, Math.min(14, (e.movementY || 0) * -1.2)));
-  });
-  const release = () => {
-    if (!held) return; held = false; spin.classList.remove('live'); hint.classList.add('gone');
-    setAng(moved < 5 ? ang + 180 : Math.round(ang / 180) * 180);       // a tap flips; a drag settles
-  };
-  spin.addEventListener('pointerup', release); spin.addEventListener('pointercancel', release);
-  spin.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setAng(ang + 180); hint.classList.add('gone'); }
-    if (e.key === 'ArrowLeft') setAng(ang - 180); if (e.key === 'ArrowRight') setAng(ang + 180); };
-  document.querySelectorAll('.thumb').forEach((b) => b.onclick = () => {
-    document.querySelectorAll('.thumb').forEach((x) => x.classList.toggle('on', x === b));
-    spin.querySelector('.front img').src = `img/slab-${b.dataset.slab}.webp`;
-    setAng(Math.round(ang / 360) * 360 + 360);                                 // one full turn to show it
-    scene.scrollIntoView({ behavior: still ? 'auto' : 'smooth' });
-  });
+  // ── the slabs adrift: named on hover, carried off by the scroll ────────
+  const float = $('float');
+  function captions() {
+    float.querySelectorAll('.card').forEach((el) => {
+      const k = classes.find((c) => c.name === el.dataset.class); if (!k) return;
+      const mark = box * k.markX;
+      el.querySelector('figcaption').innerHTML = `<b>${k.work || k.name}</b><span>${k.name} ${GRADE[k.name]} · 1 of ${k.edition}</span><span><i>${fmt(mark)} HYPE</i> mark · Ferryman pays ${fmt(mark * C.deskRate)}</span>`;
+      el.setAttribute('aria-label', `${k.work || k.name}. ${k.name}, one of ${k.edition}. Mark ${fmt(mark)} HYPE.`);
+    });
+  }
+  captions();
+  let ticking = false;
+  const drift = () => { ticking = false; float.style.setProperty('--s', Math.max(0, Math.min(1.4, scrollY / (scene.offsetHeight * 0.8))).toFixed(3)); };
+  if (!still) { addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(drift); } }, { passive: true }); drift(); }
 
   // ── how a draw works, stepped through ─────────────────────────────────
   const hex = (n) => [...crypto.getRandomValues(new Uint8Array(n))].map((b) => b.toString(16).padStart(2, '0')).join('');

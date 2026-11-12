@@ -27,9 +27,9 @@ window.AMPHORA = {
   // Shown until the chain or the API answers. Marks are ratios of the box price.
   boxPriceHype: 0.5,
   classes: [
-    { name: 'Mortal',   edition: 300, ppm: 978392, markX: 0.7, stars: 0 },
-    { name: 'Hero',     edition: 25,  ppm: 19608,  markX: 2.1, stars: 1 },
-    { name: 'Olympian', edition: 5,   ppm: 2000,   markX: 7.0, stars: 2 },
+    { name: 'Mortal', work: 'The Gift of Fortune',   edition: 300, ppm: 978392, markX: 0.7, stars: 0 },
+    { name: 'Hero', work: 'The Muse',     edition: 25,  ppm: 19608,  markX: 2.1, stars: 1 },
+    { name: 'Olympian', work: 'Pegasus', edition: 5,   ppm: 2000,   markX: 7.0, stars: 2 },
   ],
   deskRate: 0.8,
 };
