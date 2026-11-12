@@ -225,11 +225,11 @@ footer { max-width: var(--max); margin: 0 auto; padding: clamp(56px, 8vw, 96px) 
   animation: key 60s linear infinite; }
 @keyframes key { to { background-position: 520px 0; } }
 .meander + .block { padding-top: clamp(40px, 6vw, 72px); }
-.wash { position: absolute; top: -8%; width: min(780px, 70vw); aspect-ratio: 1.08; background: url(img/fresco.jpg) center / cover; opacity: .11; pointer-events: none; z-index: 0;
+.wash { position: absolute; top: -8%; width: min(780px, 70vw); aspect-ratio: 1.08; background: center / cover; opacity: .13; pointer-events: none; z-index: 0;
   filter: grayscale(.35) contrast(1.1); translate: 0 calc(var(--sy, 0) * -60px);
   -webkit-mask: radial-gradient(closest-side, #000 20%, transparent 100%); mask: radial-gradient(closest-side, #000 20%, transparent 100%); }
-.w-left { right: 58%; } .w-right { left: 52%; }
-.shard { position: absolute; width: clamp(110px, 12vw, 170px); opacity: .5; pointer-events: none; z-index: 0; filter: drop-shadow(0 18px 22px rgba(0,0,0,.6)) saturate(.8);
+.w-left { right: 58%; background-image: url(img/wash-mural.jpg); } .w-right { left: 52%; background-image: url(img/wash-sky.jpg); }
+.shard { position: absolute; width: clamp(110px, 12vw, 170px); opacity: .85; pointer-events: none; z-index: 0; filter: drop-shadow(0 18px 22px rgba(0,0,0,.65)) brightness(.82);
   animation: bob 9s ease-in-out infinite; }
 .s-right { left: calc(100% + 24px); top: 34%; rotate: 11deg; translate: 0 calc(var(--sy, 0) * -90px); }
 .s-left { right: calc(100% + 24px); top: 20%; rotate: -14deg; translate: 0 calc(var(--sy, 0) * -120px); animation-duration: 11s; }
