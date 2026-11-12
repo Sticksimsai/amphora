@@ -20,7 +20,7 @@
 <header class="bar">
   <a class="brand" href="#top" aria-label="Amphora"><img src="img/logo-wordmark.svg" alt="Amphora"></a>
   <nav>
-    <a href="#machine">Try a draw</a>
+    <a href="#machine">Rarities</a>
     <a href="#how">How it works</a>
     <a href="#object">The object</a>
   </nav>
@@ -44,7 +44,7 @@
       <p class="copy">One box, one numbered fragment of a real work. The odds are on-chain before anyone opens anything, and the Ferryman buys back whatever you draw at 80% of its mark.</p>
       <div class="actions">
         <button class="btn primary" id="draw" disabled>Opening soon</button>
-        <a class="btn ghost" href="#machine">Try a demo draw</a>
+        <a class="btn ghost" href="#machine">See the rarities</a>
       </div>
       <p class="meta note" id="status" role="status"></p>
     </div>
@@ -70,8 +70,8 @@
 <section class="block" id="machine">
   <img class="shard s-right" src="img/shard-muse.webp" alt="" aria-hidden="true" loading="lazy">
   <div class="head rise">
-    <h2>Try the <em>draw</em></h2>
-    <p class="copy">A demo with the same odds as the contract. No wallet, no HYPE. Draw until the numbers stop surprising you.</p>
+    <h2>The <em>rarities</em></h2>
+    <p class="copy">Three classes, fixed before the first box and readable on-chain. Pick a class to see its slab.</p>
   </div>
 
   <div class="bench">
@@ -79,36 +79,31 @@
       <div class="stage" id="stage">
         <i class="rays" aria-hidden="true"></i><i class="pool" aria-hidden="true"></i>
         <div class="lift">
-          <div class="flip sealed" id="demo" tabindex="0" role="button" aria-label="A sealed box. Press to draw.">
+          <div class="flip" id="demo">
             <div class="face back"><img src="img/card-back.jpg" alt="" draggable="false"></div>
-            <div class="face front"><img id="demo-slab" src="img/slab-mortal.webp" alt="" draggable="false"><i class="sheen" aria-hidden="true"></i></div>
+            <div class="face front"><img id="demo-slab" src="img/slab-olympian.webp" alt="" draggable="false"><i class="sheen" aria-hidden="true"></i></div>
           </div>
         </div>
         <i class="floor" aria-hidden="true"></i>
       </div>
-      <p class="result" id="result" role="status">Sealed. Press the card.</p>
+      <p class="result" id="result" role="status">&nbsp;</p>
       <p class="seed" id="seed">&nbsp;</p>
-      <div class="actions">
-        <button class="btn primary" id="again">Draw</button>
-        <button class="btn" id="hundred">Draw ×100</button>
-        <button class="btn quiet" id="reset">Reset</button>
-      </div>
     </div>
 
     <div class="book rise">
       <table class="ladder">
-        <thead><tr><th>Class</th><th>Mark</th><th>Ferryman</th><th>Published</th><th>You drew</th></tr></thead>
+        <thead><tr><th>Class</th><th>Edition</th><th>Odds</th><th>Mark</th><th>Ferryman</th></tr></thead>
         <tbody id="rows"></tbody>
       </table>
       <dl class="tally">
-        <div><dt>Boxes opened</dt><dd id="t-n">0</dd></div>
-        <div><dt>Spent</dt><dd><span id="t-spent">0.00</span> HYPE</dd></div>
-        <div><dt>Marks drawn</dt><dd><span id="t-marks">0.00</span> HYPE</dd></div>
-        <div><dt>If sold to the Ferryman</dt><dd class="hot"><span id="t-desk">0.00</span> HYPE</dd></div>
+        <div><dt>Box</dt><dd><span id="price2">0.50</span> HYPE</dd></div>
+        <div><dt>Expected value</dt><dd><span id="ev">0.37</span> HYPE</dd></div>
+        <div><dt>Return</dt><dd><span id="ret">74</span>%</dd></div>
+        <div><dt>Ferryman pays</dt><dd class="hot"><span id="rate">80</span>% of mark</dd></div>
       </dl>
-      <p class="fine left">Expected value is <b id="ev">0.37</b> HYPE on a <b id="price2">0.50</b> HYPE box. Over enough draws the last figure settles below what you spent. That is the price of the object, and we would rather you saw it here first.</p>
-      <div class="tray-head"><span>Your last draws</span><span id="tray-more"></span></div>
-      <div class="tray" id="tray" aria-live="off"></div>
+      <div class="tray-head"><span>One thousand boxes, on average</span><span id="field-key"></span></div>
+      <div class="field" id="field" aria-hidden="true"></div>
+      <p class="fine left">Expected value sits below the box price. That gap is the price of the object, and we would rather you saw it here first.</p>
     </div>
   </div>
 </section>

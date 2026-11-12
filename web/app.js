@@ -10,26 +10,29 @@
 
   let box = C.boxPriceHype, classes = C.classes.map((k) => ({ ...k }));
 
-  // ── the ladder, with what you have drawn beside what was published ─────
-  const counts = {}; let opened = 0;
+  // ── the rarities: the published ladder, and what a thousand boxes look like ──
+  const odds = (k) => k.ppm === 0 ? 'Not stocked' : k.ppm > 5e5 ? (k.ppm / 1e4).toFixed(2) + '%' : '1 in ' + Math.round(1e6 / k.ppm).toLocaleString('en');
+  let picked = null;
   function renderLadder() {
-    let ev = 0;
+    let ev = 0; const top = Math.max(...classes.map((k) => k.ppm), 1);
     $('rows').innerHTML = classes.map((k, i) => {
       const mark = box * k.markX; ev += mark * k.ppm / 1e6;
-      const pub = k.ppm === 0 ? 'Not stocked' : k.ppm > 5e5 ? (k.ppm / 1e4).toFixed(2) + '%' : '1 in ' + Math.round(1e6 / k.ppm).toLocaleString('en');
-      const n = counts[k.name] || 0, pct = opened ? n / opened * 100 : 0;
-      return `<tr data-name="${k.name}" class="${i === classes.length - 1 ? 'top' : ''}"><td>${k.name}${STAR.repeat(k.stars)}</td>` +
-        `<td>${fmt(mark)}</td><td>${fmt(mark * C.deskRate)}</td><td>${pub}</td>` +
-        `<td class="obs bar-cell"><b>${n}</b> · ${pct.toFixed(opened >= 100 ? 2 : 0)}%<i style="--w:${Math.min(100, pct).toFixed(1)}%"></i></td></tr>`;
+      // square-root scale, or the rare classes would not show at all
+      const w = k.ppm ? Math.max(2, Math.sqrt(k.ppm / top) * 100) : 0;
+      return `<tr data-name="${k.name}" tabindex="0" class="${i === classes.length - 1 ? 'top' : ''}${k.name === picked ? ' lit' : ''}"><td>${k.name}${STAR.repeat(k.stars)}</td>` +
+        `<td>${k.edition}</td><td class="bar-cell">${odds(k)}<i style="--w:${w.toFixed(1)}%"></i></td><td>${fmt(mark)}</td><td>${fmt(mark * C.deskRate)}</td></tr>`;
     }).join('');
     $('price').textContent = $('price2').textContent = box.toFixed(2);
     $('ev').textContent = ev.toFixed(2);
-    $('evp').textContent = Math.round(ev / box * 100);
-    let marks = 0; classes.forEach((k) => { marks += (counts[k.name] || 0) * box * k.markX; });
-    $('t-n').textContent = opened.toLocaleString('en');
-    $('t-spent').textContent = (opened * box).toFixed(2);
-    $('t-marks').textContent = marks.toFixed(2);
-    $('t-desk').textContent = (marks * C.deskRate).toFixed(2);
+    $('evp').textContent = $('ret').textContent = Math.round(ev / box * 100);
+    $('rate').textContent = Math.round(C.deskRate * 100);
+    // A thousand boxes as a thousand marks, the rare ones scattered where they fall.
+    const n = classes.map((k) => Math.round(k.ppm / 1000)), cells = new Array(1000).fill(0);
+    let seed = 2311; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+    for (let c = classes.length - 1; c > 0; c--) for (let i = 0; i < n[c]; i++) { let p; do { p = Math.floor(rnd() * 1000); } while (cells[p]); cells[p] = c; }
+    $('field').innerHTML = cells.map((c, i) => `<i class="d${c}" style="--i:${(i % 50) * 12 + Math.floor(i / 50) * 18}ms" data-name="${classes[c].name}"></i>`).join('');
+    n[0] = 1000 - n.slice(1).reduce((x, y) => x + y, 0);
+    $('field-key').innerHTML = classes.map((k, c) => `<i class="d${c}"></i>${n[c]} ${k.name}`).join('<b></b>');
   }
   renderLadder();
 
@@ -38,12 +41,10 @@
     const by = Object.fromEntries(m.tiers.map((t) => [t.name.toUpperCase(), t]));
     box = m.priceHype;
     classes = classes.map((k) => { const t = by[k.name.toUpperCase()]; return { ...k, ppm: t && t.available > 0 ? Math.round(t.probability * 1e6) : 0 }; });
-    renderLadder(); captions();
+    renderLadder(); captions(); const p = picked; picked = null; pick(p);
   }).catch(() => {});
 
-  // ── the demo machine ──────────────────────────────────────────────────
-  // A uniform roll in [0, 1,000,000) from the browser's own entropy, walked
-  // down the published ladder exactly as the contract walks it.
+  // A uniform roll in [0, 1,000,000), walked down the ladder as the contract walks it.
   function roll() {
     const buf = new Uint32Array(1); let v;
     do { crypto.getRandomValues(buf); v = buf[0]; } while (v >= 4294000000);   // reject the biased tail
@@ -51,67 +52,32 @@
   }
   function classFor(r) { let acc = 0; for (const k of classes) { acc += k.ppm; if (r < acc) return k; } return classes[0]; }
 
-  const demo = $('demo'), stage = $('stage'), tray = $('tray'); let busy = false;
-  const TRAY = 12, drawn = [];
-  function record(k) { counts[k.name] = (counts[k.name] || 0) + 1; opened++; drawn.unshift(k); if (drawn.length > TRAY) drawn.length = TRAY; }
-  function renderTray(fresh) {
-    let html = '';
-    for (let i = 0; i < TRAY; i++) {
-      const k = drawn[i];
-      html += k ? `<img src="${slabOf(k.name)}" alt="${k.name}" title="${k.name} · ${fmt(box * k.markX)} HYPE" class="${k.stars ? 'star' : ''}" style="--i:${i < fresh ? (i * 0.035).toFixed(2) : 0}s${i < fresh ? '' : ';animation:none'}">` : '<span class="slot"></span>';
-    }
-    tray.innerHTML = html;
-    $('tray-more').textContent = opened > TRAY ? `+ ${(opened - TRAY).toLocaleString('en')} earlier` : '';
+  // The slab on the stage follows the class you pick; left alone, it turns through all three.
+  const demo = $('demo'), stage = $('stage'); let auto = null, turning = false;
+  function pick(name, user) {
+    const k = classes.find((c) => c.name === name); if (!k || (name === picked && !user)) return;
+    if (user) { clearInterval(auto); auto = null; }
+    const first = picked === null; picked = name;
+    document.querySelectorAll('#rows tr').forEach((x) => x.classList.toggle('lit', x.dataset.name === name));
+    document.querySelectorAll('#field i').forEach((x) => x.classList.toggle('on', x.dataset.name === name));
+    const put = () => {
+      $('demo-slab').src = slabOf(k.name);
+      $('result').textContent = k.work || k.name; $('result').classList.toggle('hot', k.stars > 0);
+      $('seed').textContent = `${k.name} ${GRADE[k.name]} · edition of ${k.edition} · ${odds(k)}`;
+      stage.classList.toggle('won', k.stars > 0);
+    };
+    if (first || still) { put(); return; }
+    if (turning) { put(); return; }
+    turning = true; demo.classList.add('sealed');                      // turn away, change, turn back
+    setTimeout(() => { put(); demo.classList.remove('sealed'); demo.classList.remove('was'); void demo.offsetWidth; demo.classList.add('was'); setTimeout(() => { turning = false; }, 500); }, 420);
   }
-  renderTray(0);
-  function show(k, r) {
-    $('demo-slab').src = slabOf(k.name);
-    const res = $('result');
-    res.textContent = `${k.name} · ${GRADE[k.name]} · ${fmt(box * k.markX)} HYPE`;
-    res.classList.toggle('hot', k.stars > 0);
-    $('seed').textContent = `roll ${r.toLocaleString('en')} of 1,000,000`;
-    stage.classList.toggle('won', k.stars > 0);
-    renderLadder();
-    const row = document.querySelector(`#rows tr[data-name="${k.name}"]`);
-    if (row) { row.classList.add('bump'); setTimeout(() => row.classList.remove('bump'), 650); }
-  }
-  function drawOnce() {
-    if (busy) return; busy = true;
-    const r = roll(), k = classFor(r); record(k);
-    if (still) { demo.classList.remove('sealed'); show(k, r); renderTray(1); busy = false; return; }
-    demo.classList.add('sealed'); demo.classList.remove('glow'); stage.classList.remove('won');
-    setTimeout(() => demo.classList.add('shake'), demo.classList.contains('was') ? 380 : 0);
-    setTimeout(() => {
-      demo.classList.remove('shake'); show(k, r); renderTray(1);
-      demo.classList.remove('sealed'); demo.classList.add('was');
-      if (k.stars) demo.classList.add('glow');
-      $('again').textContent = 'Draw again';
-      setTimeout(() => { busy = false; }, 520);
-    }, demo.classList.contains('was') ? 960 : 580);
-  }
-  demo.onclick = drawOnce; $('again').onclick = drawOnce;
-  demo.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); drawOnce(); } };
-  $('hundred').onclick = () => {
-    if (busy) return; let best = null, bestR = 0;
-    for (let i = 0; i < 100; i++) { const r = roll(), k = classFor(r); record(k); if (!best || k.stars > best.stars) { best = k; bestR = r; } }
-    demo.classList.remove('sealed'); demo.classList.add('was'); show(best, bestR); renderTray(TRAY);
-    $('result').textContent = `Best of 100: ${best.name} · ${GRADE[best.name]}`;
-    $('again').textContent = 'Draw again';
-  };
-  $('reset').onclick = () => {
-    for (const k in counts) delete counts[k]; opened = 0; drawn.length = 0; renderLadder(); renderTray(0); stage.classList.remove('won');
-    demo.classList.add('sealed'); demo.classList.remove('was', 'glow');
-    $('result').textContent = 'Sealed. Press the card.'; $('result').classList.remove('hot'); $('seed').innerHTML = '&nbsp;'; $('again').textContent = 'Draw';
-  };
-  // Hovering a class shows its slab on the bench (when the card is face up).
-  $('rows').addEventListener('click', (e) => {
-    const tr = e.target.closest('tr'); if (!tr || busy) return;
-    $('demo-slab').src = slabOf(tr.dataset.name); demo.classList.remove('sealed'); demo.classList.add('was');
-    document.querySelectorAll('#rows tr').forEach((x) => x.classList.toggle('lit', x === tr));
-    const k = classes.find((c) => c.name === tr.dataset.name);
-    $('result').textContent = `${k.name} · ${GRADE[k.name]} · edition of ${k.edition}`; $('result').classList.toggle('hot', k.stars > 0);
-    $('seed').textContent = `mark ${fmt(box * k.markX)} · the Ferryman pays ${fmt(box * k.markX * C.deskRate)} HYPE`;
-  });
+  const rowsEl = $('rows');
+  rowsEl.addEventListener('pointerover', (e) => { const tr = e.target.closest('tr'); if (tr) pick(tr.dataset.name, true); });
+  rowsEl.addEventListener('focusin', (e) => { const tr = e.target.closest('tr'); if (tr) pick(tr.dataset.name, true); });
+  rowsEl.addEventListener('click', (e) => { const tr = e.target.closest('tr'); if (tr) pick(tr.dataset.name, true); });
+  $('field').addEventListener('pointerover', (e) => { if (e.target.dataset.name && e.target.dataset.name !== classes[0].name) pick(e.target.dataset.name, true); });
+  pick(classes[classes.length - 1].name);
+  if (!still) { let n = classes.length - 1; auto = setInterval(() => { n = (n + 1) % classes.length; pick(classes[n].name); }, 4200); }
 
   // ── the scene: you carry the light ────────────────────────────────────
   const scene = $('scene'), dark = scene.querySelector('.dark'), wall = scene.querySelector('.wall');
@@ -200,11 +166,10 @@
 
   // The demo card leans toward the pointer.
   if (!still) {
-    stage.addEventListener('pointermove', (e) => { if (busy) return; const r = stage.getBoundingClientRect(); demo.classList.add('tilting');
+    stage.addEventListener('pointermove', (e) => { if (turning) return; const r = stage.getBoundingClientRect(); demo.classList.add('tilting');
       demo.style.setProperty('--ty', (((e.clientX - r.left) / r.width - 0.5) * 22).toFixed(1) + 'deg');
       demo.style.setProperty('--tx', ((0.5 - (e.clientY - r.top) / r.height) * 14).toFixed(1) + 'deg'); });
     stage.addEventListener('pointerleave', () => { demo.classList.remove('tilting'); demo.style.setProperty('--ty', '0deg'); demo.style.setProperty('--tx', '0deg'); });
-    demo.addEventListener('click', () => demo.classList.remove('tilting'));
   }
 
   // Dust in the lamplight: a few dozen motes, drifting up, shifted by the scroll.
