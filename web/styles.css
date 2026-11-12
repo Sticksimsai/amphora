@@ -89,7 +89,7 @@ dd { font: 400 13px/1.5 var(--mono); color: var(--bone); margin: 3px 0 0; }
 .hot { color: var(--accent); }
 
 /* ── sections */
-.block { max-width: var(--max); margin: 0 auto; padding: clamp(56px, 8vw, 104px) var(--pad) 0; }
+.block { position: relative; max-width: var(--max); margin: 0 auto; padding: clamp(56px, 8vw, 104px) var(--pad) 0; }
 .head { display: grid; grid-template-columns: auto 1fr; gap: 14px 40px; align-items: end; margin-bottom: 34px; padding-bottom: 20px; border-bottom: 1px solid var(--smoke); }
 h2 { font: 400 clamp(24px, 3vw, 34px)/1.1 var(--display); text-transform: uppercase; }
 .head .copy { justify-self: end; max-width: 44ch; font-size: 13px; }
@@ -97,7 +97,33 @@ h2 { font: 400 clamp(24px, 3vw, 34px)/1.1 var(--display); text-transform: upperc
 /* the bench: the demo machine beside its own ledger */
 .bench { display: grid; grid-template-columns: 300px 1fr; gap: clamp(28px, 5vw, 64px); align-items: start; }
 .rig { text-align: center; perspective: 1100px; }
-.flip { width: 210px; margin: 0 auto; cursor: pointer; }
+/* The card stands in its own light: a slow wheel of rays behind, a pool of
+   warmth, a shadow on the floor that breathes as it hovers. */
+.stage { position: relative; display: grid; place-items: center; padding: 34px 0 30px; perspective: 1100px; }
+.stage .rays { position: absolute; left: 50%; top: 46%; width: 460px; aspect-ratio: 1; translate: -50% -50%; border-radius: 50%; opacity: .5;
+  background: repeating-conic-gradient(from 0deg, color-mix(in srgb, var(--accent) 55%, transparent) 0 .35deg, transparent .35deg 7.5deg);
+  -webkit-mask: radial-gradient(circle, transparent 0 27%, #000 34%, transparent 68%); mask: radial-gradient(circle, transparent 0 27%, #000 34%, transparent 68%);
+  animation: wheel 90s linear infinite; transition: opacity .8s; }
+.stage .pool { position: absolute; left: 50%; top: 46%; width: 420px; aspect-ratio: 1; translate: -50% -50%; border-radius: 50%;
+  background: radial-gradient(circle, rgba(214,170,110,.20), rgba(214,170,110,.06) 42%, transparent 66%); transition: background .8s; }
+.stage.won .rays { opacity: 1; animation-duration: 24s; }
+.stage.won .pool { background: radial-gradient(circle, rgba(200,246,231,.24), rgba(200,246,231,.07) 42%, transparent 66%); }
+@keyframes wheel { to { rotate: 360deg; } }
+.lift { position: relative; animation: bob 6.5s ease-in-out infinite; }
+.floor { position: relative; display: block; width: 170px; height: 16px; margin-top: 20px; border-radius: 50%; background: radial-gradient(closest-side, rgba(0,0,0,.75), transparent); animation: breathe 6.5s ease-in-out infinite; }
+@keyframes breathe { 50% { scale: .82 1; opacity: .6; } }
+.flip { position: relative; width: 236px; aspect-ratio: 760 / 1000; margin: 0 auto; cursor: pointer; transform-style: preserve-3d; outline: none;
+  transform: rotateX(var(--tx, 0deg)) rotateY(calc(var(--ry, 0deg) + var(--ty, 0deg))); transition: transform .8s cubic-bezier(.2,.8,.2,1); }
+.flip:focus-visible { outline: 1px solid var(--accent); outline-offset: 12px; }
+.flip.tilting { transition: transform .12s linear; }
+.face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.face img { width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 24px 28px rgba(0,0,0,.7)); user-select: none; -webkit-user-drag: none; }
+.face.back { transform: rotateY(180deg); }
+.face.back img { object-fit: cover; border-radius: 13px; box-shadow: 0 0 0 1px rgba(236,233,224,.14); }
+.sheen { position: absolute; inset: 0; border-radius: 13px; overflow: hidden; pointer-events: none; }
+.sheen::after { content: ""; position: absolute; inset: -20% -60%; background: linear-gradient(105deg, transparent 42%, rgba(255,255,255,.34) 50%, transparent 58%); translate: -70% 0; }
+.flip.was:not(.sealed) .sheen::after { animation: sweep 1.2s .35s ease-out; }
+@keyframes sweep { to { translate: 70% 0; } }
 .flip.sealed { --ry: 180deg; }
 .flip.shake { animation: shake .55s cubic-bezier(.36,.07,.19,.97); }
 @keyframes shake { 10%, 90% { translate: -2px 0; rotate: -1deg; } 20%, 80% { translate: 4px 0; rotate: 1.5deg; } 30%, 50%, 70% { translate: -6px 0; rotate: -2deg; } 40%, 60% { translate: 6px 0; rotate: 2deg; } }
@@ -189,3 +215,34 @@ footer { max-width: var(--max); margin: 0 auto; padding: clamp(56px, 8vw, 96px) 
   .wall video { display: none; }
   .dark { opacity: .62; -webkit-mask: none; mask: none; }
 }
+
+/* ── atmosphere: dust in the air, plaster in the margins, a key pattern between rooms */
+#motes { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
+.scene, .block, footer, .meander { z-index: 2; } .block > .head, .bench, .stepper, .shelf { position: relative; z-index: 2; }
+.meander { position: relative; height: 13px; max-width: var(--max); margin: clamp(56px, 8vw, 104px) auto 0; opacity: .5;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='13' fill='none' stroke='%2334383a' stroke-width='1'%3E%3Cpath d='M0 12.5H4.5V.5H21.5V8.5H13.5V4.5'/%3E%3Cpath d='M21.5 12.5H26'/%3E%3C/svg%3E") repeat-x 0 0 / 26px 13px;
+  -webkit-mask: linear-gradient(90deg, transparent, #000 30%, #000 70%, transparent); mask: linear-gradient(90deg, transparent, #000 30%, #000 70%, transparent);
+  animation: key 60s linear infinite; }
+@keyframes key { to { background-position: 520px 0; } }
+.meander + .block { padding-top: clamp(40px, 6vw, 72px); }
+.wash { position: absolute; top: -8%; width: min(780px, 70vw); aspect-ratio: 1.08; background: url(img/fresco.jpg) center / cover; opacity: .11; pointer-events: none; z-index: 0;
+  filter: grayscale(.35) contrast(1.1); translate: 0 calc(var(--sy, 0) * -60px);
+  -webkit-mask: radial-gradient(closest-side, #000 20%, transparent 100%); mask: radial-gradient(closest-side, #000 20%, transparent 100%); }
+.w-left { right: 58%; } .w-right { left: 52%; }
+.shard { position: absolute; width: clamp(110px, 12vw, 170px); opacity: .5; pointer-events: none; z-index: 0; filter: drop-shadow(0 18px 22px rgba(0,0,0,.6)) saturate(.8);
+  animation: bob 9s ease-in-out infinite; }
+.s-right { left: calc(100% + 24px); top: 34%; rotate: 11deg; translate: 0 calc(var(--sy, 0) * -90px); }
+.s-left { right: calc(100% + 24px); top: 20%; rotate: -14deg; translate: 0 calc(var(--sy, 0) * -120px); animation-duration: 11s; }
+@media (max-width: 1380px) { .shard { display: none; } }
+
+/* the tray: what you have drawn, laid out as it comes */
+.tray-head { display: flex; justify-content: space-between; margin-top: 26px; padding-bottom: 10px; border-bottom: 1px solid var(--smoke); font: 500 10px/1.4 var(--sans); letter-spacing: .24em; text-transform: uppercase; color: var(--ash); }
+.tray { display: grid; grid-template-columns: repeat(12, 1fr); gap: 8px; margin-top: 14px; }
+.tray > * { aspect-ratio: 760 / 1000; border-radius: 4px; }
+.tray .slot { border: 1px dashed var(--smoke); opacity: .7; }
+.tray img { width: 100%; height: 100%; object-fit: contain; animation: deal .55s cubic-bezier(.2,.8,.2,1) both; animation-delay: var(--i, 0s); filter: drop-shadow(0 6px 8px rgba(0,0,0,.6)); transition: translate .3s, scale .3s; }
+.tray img:hover { translate: 0 -5px; scale: 1.12; }
+.tray img.star { filter: drop-shadow(0 0 9px rgba(200,246,231,.55)); }
+@keyframes deal { from { opacity: 0; translate: -18px -14px; rotate: -14deg; } }
+@media (max-width: 820px) { .tray { grid-template-columns: repeat(6, 1fr); } .stage .rays, .stage .pool { width: 360px; } }
+@media (prefers-reduced-motion: reduce) { #motes { display: none; } }

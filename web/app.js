@@ -51,14 +51,26 @@
   }
   function classFor(r) { let acc = 0; for (const k of classes) { acc += k.ppm; if (r < acc) return k; } return classes[0]; }
 
-  const demo = $('demo'); let busy = false;
-  function record(k) { counts[k.name] = (counts[k.name] || 0) + 1; opened++; }
+  const demo = $('demo'), stage = $('stage'), tray = $('tray'); let busy = false;
+  const TRAY = 12, drawn = [];
+  function record(k) { counts[k.name] = (counts[k.name] || 0) + 1; opened++; drawn.unshift(k); if (drawn.length > TRAY) drawn.length = TRAY; }
+  function renderTray(fresh) {
+    let html = '';
+    for (let i = 0; i < TRAY; i++) {
+      const k = drawn[i];
+      html += k ? `<img src="${slabOf(k.name)}" alt="${k.name}" title="${k.name} · ${fmt(box * k.markX)} HYPE" class="${k.stars ? 'star' : ''}" style="--i:${i < fresh ? (i * 0.035).toFixed(2) : 0}s${i < fresh ? '' : ';animation:none'}">` : '<span class="slot"></span>';
+    }
+    tray.innerHTML = html;
+    $('tray-more').textContent = opened > TRAY ? `+ ${(opened - TRAY).toLocaleString('en')} earlier` : '';
+  }
+  renderTray(0);
   function show(k, r) {
     $('demo-slab').src = slabOf(k.name);
     const res = $('result');
     res.textContent = `${k.name} · ${GRADE[k.name]} · ${fmt(box * k.markX)} HYPE`;
     res.classList.toggle('hot', k.stars > 0);
     $('seed').textContent = `roll ${r.toLocaleString('en')} of 1,000,000`;
+    stage.classList.toggle('won', k.stars > 0);
     renderLadder();
     const row = document.querySelector(`#rows tr[data-name="${k.name}"]`);
     if (row) { row.classList.add('bump'); setTimeout(() => row.classList.remove('bump'), 650); }
@@ -66,11 +78,11 @@
   function drawOnce() {
     if (busy) return; busy = true;
     const r = roll(), k = classFor(r); record(k);
-    if (still) { demo.classList.remove('sealed'); show(k, r); busy = false; return; }
-    demo.classList.add('sealed'); demo.classList.remove('glow');
+    if (still) { demo.classList.remove('sealed'); show(k, r); renderTray(1); busy = false; return; }
+    demo.classList.add('sealed'); demo.classList.remove('glow'); stage.classList.remove('won');
     setTimeout(() => demo.classList.add('shake'), demo.classList.contains('was') ? 380 : 0);
     setTimeout(() => {
-      demo.classList.remove('shake'); show(k, r);
+      demo.classList.remove('shake'); show(k, r); renderTray(1);
       demo.classList.remove('sealed'); demo.classList.add('was');
       if (k.stars) demo.classList.add('glow');
       $('again').textContent = 'Draw again';
@@ -82,12 +94,12 @@
   $('hundred').onclick = () => {
     if (busy) return; let best = null, bestR = 0;
     for (let i = 0; i < 100; i++) { const r = roll(), k = classFor(r); record(k); if (!best || k.stars > best.stars) { best = k; bestR = r; } }
-    demo.classList.remove('sealed'); demo.classList.add('was'); show(best, bestR);
+    demo.classList.remove('sealed'); demo.classList.add('was'); show(best, bestR); renderTray(TRAY);
     $('result').textContent = `Best of 100: ${best.name} · ${GRADE[best.name]}`;
     $('again').textContent = 'Draw again';
   };
   $('reset').onclick = () => {
-    for (const k in counts) delete counts[k]; opened = 0; renderLadder();
+    for (const k in counts) delete counts[k]; opened = 0; drawn.length = 0; renderLadder(); renderTray(0); stage.classList.remove('won');
     demo.classList.add('sealed'); demo.classList.remove('was', 'glow');
     $('result').textContent = 'Sealed. Press the card.'; $('result').classList.remove('hot'); $('seed').innerHTML = '&nbsp;'; $('again').textContent = 'Draw';
   };
@@ -185,6 +197,37 @@
       el.style.setProperty('--rx', ((0.5 - (e.clientY - r.top) / r.height) * 10).toFixed(2) + 'deg'); });
     el.addEventListener('pointerleave', () => { el.style.setProperty('--ry', '0deg'); el.style.setProperty('--rx', '0deg'); });
   });
+
+  // The demo card leans toward the pointer.
+  if (!still) {
+    stage.addEventListener('pointermove', (e) => { if (busy) return; const r = stage.getBoundingClientRect(); demo.classList.add('tilting');
+      demo.style.setProperty('--ty', (((e.clientX - r.left) / r.width - 0.5) * 22).toFixed(1) + 'deg');
+      demo.style.setProperty('--tx', ((0.5 - (e.clientY - r.top) / r.height) * 14).toFixed(1) + 'deg'); });
+    stage.addEventListener('pointerleave', () => { demo.classList.remove('tilting'); demo.style.setProperty('--ty', '0deg'); demo.style.setProperty('--tx', '0deg'); });
+    demo.addEventListener('click', () => demo.classList.remove('tilting'));
+  }
+
+  // Dust in the lamplight: a few dozen motes, drifting up, shifted by the scroll.
+  const cv = $('motes');
+  if (!still && cv.getContext) {
+    const g = cv.getContext('2d'); let W = 0, H = 0, sy = 0; const dpr = Math.min(devicePixelRatio || 1, 2);
+    const size = () => { W = cv.width = innerWidth * dpr; H = cv.height = innerHeight * dpr; };
+    size(); addEventListener('resize', size);
+    const N = innerWidth < 820 ? 26 : 60, M = [];
+    for (let i = 0; i < N; i++) M.push({ x: Math.random(), y: Math.random(), z: 0.3 + Math.random() * 0.7, p: Math.random() * 6.28, s: 0.4 + Math.random() });
+    addEventListener('scroll', () => { sy = scrollY; document.documentElement.style.setProperty('--sy', (scrollY / innerHeight).toFixed(3)); }, { passive: true });
+    let on = true; document.addEventListener('visibilitychange', () => { on = !document.hidden; if (on) requestAnimationFrame(dust); });
+    function dust(t) {
+      if (!on) return; g.clearRect(0, 0, W, H);
+      for (const m of M) {
+        m.y -= 0.00022 * m.s * m.z; m.x += Math.sin(t / 2600 + m.p) * 0.00012; if (m.y < -0.02) { m.y = 1.02; m.x = Math.random(); }
+        const y = (((m.y * H - sy * dpr * 0.35 * m.z) % H) + H) % H, a = (0.10 + 0.16 * (0.5 + 0.5 * Math.sin(t / 900 + m.p))) * m.z;
+        g.beginPath(); g.arc(m.x * W, y, (0.6 + 1.3 * m.z) * dpr, 0, 6.28); g.fillStyle = `rgba(236,222,196,${a.toFixed(3)})`; g.fill();
+      }
+      requestAnimationFrame(dust);
+    }
+    requestAnimationFrame(dust);
+  }
 
   // ── wallet: EIP-6963 discovery, hand-defined chain, one payable transaction ──
   const HEX = '0x' + C.chainId.toString(16);

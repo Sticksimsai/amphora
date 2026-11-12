@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<canvas id="motes" aria-hidden="true"></canvas>
 <svg class="grain" aria-hidden="true"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .5 0"/></filter><rect width="100%" height="100%" filter="url(#n)"/></svg>
 
 <header class="bar">
@@ -64,7 +65,10 @@
 </section>
 
 <!-- The machine, as a demo. Same ladder, no money. -->
+<div class="meander" aria-hidden="true"></div>
+
 <section class="block" id="machine">
+  <img class="shard s-right" src="img/fragment.webp" alt="" aria-hidden="true" loading="lazy">
   <div class="head rise">
     <h2>Try the <em>draw</em></h2>
     <p class="copy">A demo with the same odds as the contract. No wallet, no HYPE. Draw until the numbers stop surprising you.</p>
@@ -72,9 +76,15 @@
 
   <div class="bench">
     <div class="rig rise">
-      <div class="flip sealed" id="demo" tabindex="0" role="button" aria-label="A sealed box. Press to draw.">
-        <div class="face back"><img src="img/card-back.jpg" alt="" draggable="false"></div>
-        <div class="face front"><img id="demo-slab" src="img/slab-mortal.webp" alt="" draggable="false"></div>
+      <div class="stage" id="stage">
+        <i class="rays" aria-hidden="true"></i><i class="pool" aria-hidden="true"></i>
+        <div class="lift">
+          <div class="flip sealed" id="demo" tabindex="0" role="button" aria-label="A sealed box. Press to draw.">
+            <div class="face back"><img src="img/card-back.jpg" alt="" draggable="false"></div>
+            <div class="face front"><img id="demo-slab" src="img/slab-mortal.webp" alt="" draggable="false"><i class="sheen" aria-hidden="true"></i></div>
+          </div>
+        </div>
+        <i class="floor" aria-hidden="true"></i>
       </div>
       <p class="result" id="result" role="status">Sealed. Press the card.</p>
       <p class="seed" id="seed">&nbsp;</p>
@@ -97,11 +107,16 @@
         <div><dt>If sold to the Ferryman</dt><dd class="hot"><span id="t-desk">0.00</span> HYPE</dd></div>
       </dl>
       <p class="fine left">Expected value is <b id="ev">0.37</b> HYPE on a <b id="price2">0.50</b> HYPE box. Over enough draws the last figure settles below what you spent. That is the price of the object, and we would rather you saw it here first.</p>
+      <div class="tray-head"><span>Your last draws</span><span id="tray-more"></span></div>
+      <div class="tray" id="tray" aria-live="off"></div>
     </div>
   </div>
 </section>
 
+<div class="meander" aria-hidden="true"></div>
+
 <section class="block" id="how">
+  <i class="wash w-left" aria-hidden="true"></i>
   <div class="head rise">
     <h2>Neither side <em>holds the dice</em></h2>
     <p class="copy">Step through one draw.</p>
@@ -118,7 +133,11 @@
   </div>
 </section>
 
+<div class="meander" aria-hidden="true"></div>
+
 <section class="block" id="object">
+  <i class="wash w-right" aria-hidden="true"></i>
+  <img class="shard s-left" src="img/fragment.webp" alt="" aria-hidden="true" loading="lazy">
   <div class="head rise">
     <h2>Hold it, <em>and it answers</em></h2>
     <p class="copy">Any Sherd can be redeemed as a sealed card with a chip inside and a signed certificate. Redeeming binds the certificate to the card for good: one number, one object.</p>
